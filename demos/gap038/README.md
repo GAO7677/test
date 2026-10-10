@@ -13,3 +13,15 @@
 Predict2.5 的输入及完整 context / timestep 审计与历史记录一致，但 clean 和 noisy 视频均有像素差异；原始未拆分脚本对照也有差异，原因尚未确定。这两个 demo 展示当前复跑输出，不表示严格复现已通过。
 
 [复现命令与依赖](../../scripts_mytrain/inference/historical/README.md) · [详细验证记录](../../scripts_mytrain/inference/historical/verification.json) · [视频 SHA-256 与脚本对应表](manifest.json)
+
+## Context / future 同等级对照
+
+新增三个视频使用相同行内的权重、输入和噪声种子，逐步令 `context_sigma = future_sigma`、`context_timestep = future_timestep`，不做训练网格最近邻量化。原噪声来源、mask、CFG 和采样器保持原 noisy 设置。
+
+| Backbone | 新视频 | 实际逐步记录 |
+|---|---|---|
+| Wan | [同等级 noisy](wan_equal_sigma.mp4) | [sigma / timestep](wan_equal_sigma_trace.json) |
+| Nano | [同等级 noisy](nano_equal_sigma.mp4) | [sigma / timestep](nano_equal_sigma_trace.json) |
+| Predict2.5 | [同等级 noisy](predict25_equal_sigma.mp4) | [sigma / timestep](predict25_equal_sigma_trace.json) |
+
+[九视频联动对比页](comparison.html) · [实验代码和前台启动命令](../../scripts_mytrain/inference/equal_sigma/README.md) · [新视频来源及校验记录](equal_sigma_manifest.json)

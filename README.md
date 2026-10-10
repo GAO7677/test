@@ -10,8 +10,10 @@ Wan、Cosmos3-Nano、Cosmos-Predict2.5 的历史 clean / context 加噪推理代
 | Cosmos3-Nano | [nano_clean.py](scripts_mytrain/inference/historical/nano_clean.py) | [nano_noisy.py](scripts_mytrain/inference/historical/nano_noisy.py) |
 | Cosmos-Predict2.5 | [predict25_clean.py](scripts_mytrain/inference/historical/predict25_clean.py) | [predict25_noisy.py](scripts_mytrain/inference/historical/predict25_noisy.py) |
 
-本仓库包含推理源码、冻结辅助代码、配置、验证记录及六个推理 demo 视频，不包含权重、完整数据集或完整 backbone 工程。复现依赖原模型工程、Python 环境及外部资产；配置保留原实验的绝对路径，需要在具有这些依赖的环境运行。六个入口共享辅助代码，不能单独复制一个文件运行。
+本仓库包含推理源码、冻结辅助代码、配置、验证记录及推理 demo 视频，不包含权重、完整数据集或完整 backbone 工程。复现依赖原模型工程、Python 环境及外部资产；配置保留原实验的绝对路径，需要在具有这些依赖的环境运行。六个入口共享辅助代码，不能单独复制一个文件运行。
 
 验证状态：Wan、Nano 的 clean / noisy 各一例共四个视频逐字节复现；Predict2.5 输入和完整 context / timestep 审计一致，但两个视频尚未逐字节复现，原始未拆分脚本对照也存在差异。详见 [验证记录](scripts_mytrain/inference/historical/verification.json)。
 
 不包含后续 RePaint、回跳或提前 n 步变体。保留源文件中的既有版权与许可声明；上游模型和依赖遵循各自的许可。
+
+新增 [context / future 同等级推理实验](scripts_mytrain/inference/equal_sigma/README.md)：三个新视频及 [九视频对比页](demos/gap038/comparison.html)，独立于原六个历史入口。对比页需通过本地 HTTP 服务打开，启动命令见实验说明。

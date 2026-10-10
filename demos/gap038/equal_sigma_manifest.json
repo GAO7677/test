@@ -1,0 +1,103 @@
+{
+  "protocol": "Exact context_sigma=future_sigma and context_timestep=future_timestep; other noisy settings retained",
+  "videos": [
+    {
+      "backbone": "wan",
+      "video": "wan_equal_sigma.mp4",
+      "sha256": "230facf4ff79846fd1300323b9315addcddf0bc29732ad41e8302bd358ee4830",
+      "bytes": 980824,
+      "steps": 40,
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1000,
+      "baseline_noisy": "wan_noisy.mp4",
+      "baseline_sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "pairing_checks": {
+        "paired_input_equal": true
+      },
+      "verification": {
+        "status": "PASS",
+        "backbone": "wan",
+        "scope": "exact per-forward sigma/timestep alignment; not historical byte-exact reproduction",
+        "steps": 40,
+        "calls": 40,
+        "video": "/data/gaoya/agent-data/outputs/equal_sigma_20261010/wan/results/v2v_gap_038__N75__seed42__equal_sigma/video.mp4",
+        "video_sha256": "230facf4ff79846fd1300323b9315addcddf0bc29732ad41e8302bd358ee4830",
+        "runner_sha256": "5abe9ec952e1504e1d518ab58e3e95d0fc89264e79ce5a79e511c56b0595fa42",
+        "entry_sha256": "2b931ceb4b2670ed4def1c90a13937e583b84058c4275259d524e99569cdcaec",
+        "source_patches": []
+      }
+    },
+    {
+      "backbone": "nano",
+      "video": "nano_equal_sigma.mp4",
+      "sha256": "b461b27ee8fa74d491d9e0d47dfa68239dd897c990fa8d5289073707f2dae390",
+      "bytes": 69458,
+      "steps": 40,
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "baseline_noisy": "nano_noisy.mp4",
+      "baseline_sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "pairing_checks": {
+        "rgb8_equal": true,
+        "clean_context_sha256_equal": true,
+        "context_noise_sha256_equal": true,
+        "future_initial_sha256_equal": true
+      },
+      "verification": {
+        "status": "PASS",
+        "backbone": "nano",
+        "scope": "exact per-forward sigma/timestep alignment; not historical byte-exact reproduction",
+        "steps": 40,
+        "calls": 40,
+        "video": "/data/gaoya/agent-data/outputs/equal_sigma_20261010/nano/results/v2v_gap_038/video.mp4",
+        "video_sha256": "b461b27ee8fa74d491d9e0d47dfa68239dd897c990fa8d5289073707f2dae390",
+        "runner_sha256": "5abe9ec952e1504e1d518ab58e3e95d0fc89264e79ce5a79e511c56b0595fa42",
+        "entry_sha256": "b198be11f58edd12f170c80eb5623245545ac1b035fda35c37dd91272337d7fe",
+        "source_patches": [
+          {
+            "source": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/inference/historical/frozen/nano/v2/hooks.py",
+            "original_sha256": "e2f9add699e9ed2de4c1e3af9351c75882e4b27c52e2558a0682658de6f66269",
+            "executed_source": "/data/gaoya/agent-data/outputs/equal_sigma_20261010/nano/executed_sources/historical_nano_hooks.py",
+            "executed_sha256": "22877ff948935e580ee9d1865cf3a2bef361b42bce00c72c79caf8a234cba989"
+          }
+        ]
+      }
+    },
+    {
+      "backbone": "predict25",
+      "video": "predict25_equal_sigma.mp4",
+      "sha256": "4e3a52060875a22c038e6faa70093c31f0c1c1d177eac269357e2925c8f5f926",
+      "bytes": 69227,
+      "steps": 36,
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "baseline_noisy": "predict25_noisy.mp4",
+      "baseline_sha256": "0ad2d627e78ad8b967b25cb67bb5a8adbc022b8beb5cbe1b446786942758e9f7",
+      "pairing_checks": {
+        "input_rgb_equal": true,
+        "clean_context_sha256_equal": true,
+        "context_noise_sha256_equal": true,
+        "future_initial_sha256_equal": true
+      },
+      "verification": {
+        "status": "PASS",
+        "backbone": "predict25",
+        "scope": "exact per-forward sigma/timestep alignment; not historical byte-exact reproduction",
+        "steps": 36,
+        "calls": 72,
+        "video": "/data/gaoya/agent-data/outputs/equal_sigma_20261010/predict25/results/v2v_gap_038/video.mp4",
+        "video_sha256": "4e3a52060875a22c038e6faa70093c31f0c1c1d177eac269357e2925c8f5f926",
+        "runner_sha256": "5abe9ec952e1504e1d518ab58e3e95d0fc89264e79ce5a79e511c56b0595fa42",
+        "entry_sha256": "1a0b60606885d00c480f78805f098fb8f5959468443636aed4b18b0a7b73666d",
+        "source_patches": [
+          {
+            "source": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/inference/historical/predict25_noisy.py",
+            "original_sha256": "1a0b60606885d00c480f78805f098fb8f5959468443636aed4b18b0a7b73666d",
+            "executed_source": "/data/gaoya/agent-data/outputs/equal_sigma_20261010/predict25/executed_sources/historical_predict_core.py",
+            "executed_sha256": "7c95a2065e5061058740b5529fbe6b7b93b3e1a782f3eceffc1bd7a6caf62522"
+          }
+        ]
+      }
+    }
+  ]
+}

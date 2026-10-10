@@ -1,0 +1,254 @@
+[
+  {
+    "step": 0,
+    "future_sigma": 0.9950248599052429,
+    "context_sigma": 0.9950248599052429,
+    "future_timestep": 995.0,
+    "context_timestep": 995.0
+  },
+  {
+    "step": 1,
+    "future_sigma": 0.9942067265510559,
+    "context_sigma": 0.9942067265510559,
+    "future_timestep": 994.0,
+    "context_timestep": 994.0
+  },
+  {
+    "step": 2,
+    "future_sigma": 0.993232011795044,
+    "context_sigma": 0.993232011795044,
+    "future_timestep": 993.0,
+    "context_timestep": 993.0
+  },
+  {
+    "step": 3,
+    "future_sigma": 0.992066502571106,
+    "context_sigma": 0.992066502571106,
+    "future_timestep": 992.0,
+    "context_timestep": 992.0
+  },
+  {
+    "step": 4,
+    "future_sigma": 0.9906675815582275,
+    "context_sigma": 0.9906675815582275,
+    "future_timestep": 990.0,
+    "context_timestep": 990.0
+  },
+  {
+    "step": 5,
+    "future_sigma": 0.9889820218086243,
+    "context_sigma": 0.9889820218086243,
+    "future_timestep": 988.0,
+    "context_timestep": 988.0
+  },
+  {
+    "step": 6,
+    "future_sigma": 0.9869430661201477,
+    "context_sigma": 0.9869430661201477,
+    "future_timestep": 986.0,
+    "context_timestep": 986.0
+  },
+  {
+    "step": 7,
+    "future_sigma": 0.9844666123390198,
+    "context_sigma": 0.9844666123390198,
+    "future_timestep": 984.0,
+    "context_timestep": 984.0
+  },
+  {
+    "step": 8,
+    "future_sigma": 0.9814466834068298,
+    "context_sigma": 0.9814466834068298,
+    "future_timestep": 981.0,
+    "context_timestep": 981.0
+  },
+  {
+    "step": 9,
+    "future_sigma": 0.9777488112449646,
+    "context_sigma": 0.9777488112449646,
+    "future_timestep": 977.0,
+    "context_timestep": 977.0
+  },
+  {
+    "step": 10,
+    "future_sigma": 0.9732025861740112,
+    "context_sigma": 0.9732025861740112,
+    "future_timestep": 973.0,
+    "context_timestep": 973.0
+  },
+  {
+    "step": 11,
+    "future_sigma": 0.9675912261009216,
+    "context_sigma": 0.9675912261009216,
+    "future_timestep": 967.0,
+    "context_timestep": 967.0
+  },
+  {
+    "step": 12,
+    "future_sigma": 0.9606394171714783,
+    "context_sigma": 0.9606394171714783,
+    "future_timestep": 960.0,
+    "context_timestep": 960.0
+  },
+  {
+    "step": 13,
+    "future_sigma": 0.9519975781440735,
+    "context_sigma": 0.9519975781440735,
+    "future_timestep": 951.0,
+    "context_timestep": 951.0
+  },
+  {
+    "step": 14,
+    "future_sigma": 0.9412240386009216,
+    "context_sigma": 0.9412240386009216,
+    "future_timestep": 941.0,
+    "context_timestep": 941.0
+  },
+  {
+    "step": 15,
+    "future_sigma": 0.9277644157409668,
+    "context_sigma": 0.9277644157409668,
+    "future_timestep": 927.0,
+    "context_timestep": 927.0
+  },
+  {
+    "step": 16,
+    "future_sigma": 0.9109315872192383,
+    "context_sigma": 0.9109315872192383,
+    "future_timestep": 910.0,
+    "context_timestep": 910.0
+  },
+  {
+    "step": 17,
+    "future_sigma": 0.8898900747299194,
+    "context_sigma": 0.8898900747299194,
+    "future_timestep": 889.0,
+    "context_timestep": 889.0
+  },
+  {
+    "step": 18,
+    "future_sigma": 0.8636542558670044,
+    "context_sigma": 0.8636542558670044,
+    "future_timestep": 863.0,
+    "context_timestep": 863.0
+  },
+  {
+    "step": 19,
+    "future_sigma": 0.831115186214447,
+    "context_sigma": 0.831115186214447,
+    "future_timestep": 831.0,
+    "context_timestep": 831.0
+  },
+  {
+    "step": 20,
+    "future_sigma": 0.7911184430122375,
+    "context_sigma": 0.7911184430122375,
+    "future_timestep": 791.0,
+    "context_timestep": 791.0
+  },
+  {
+    "step": 21,
+    "future_sigma": 0.7426198720932007,
+    "context_sigma": 0.7426198720932007,
+    "future_timestep": 742.0,
+    "context_timestep": 742.0
+  },
+  {
+    "step": 22,
+    "future_sigma": 0.6849421262741089,
+    "context_sigma": 0.6849421262741089,
+    "future_timestep": 684.0,
+    "context_timestep": 684.0
+  },
+  {
+    "step": 23,
+    "future_sigma": 0.618124783039093,
+    "context_sigma": 0.618124783039093,
+    "future_timestep": 618.0,
+    "context_timestep": 618.0
+  },
+  {
+    "step": 24,
+    "future_sigma": 0.5433000922203064,
+    "context_sigma": 0.5433000922203064,
+    "future_timestep": 543.0,
+    "context_timestep": 543.0
+  },
+  {
+    "step": 25,
+    "future_sigma": 0.4629429578781128,
+    "context_sigma": 0.4629429578781128,
+    "future_timestep": 462.0,
+    "context_timestep": 462.0
+  },
+  {
+    "step": 26,
+    "future_sigma": 0.38079413771629333,
+    "context_sigma": 0.38079413771629333,
+    "future_timestep": 380.0,
+    "context_timestep": 380.0
+  },
+  {
+    "step": 27,
+    "future_sigma": 0.30132922530174255,
+    "context_sigma": 0.30132922530174255,
+    "future_timestep": 301.0,
+    "context_timestep": 301.0
+  },
+  {
+    "step": 28,
+    "future_sigma": 0.22886677086353302,
+    "context_sigma": 0.22886677086353302,
+    "future_timestep": 228.0,
+    "context_timestep": 228.0
+  },
+  {
+    "step": 29,
+    "future_sigma": 0.16665080189704895,
+    "context_sigma": 0.16665080189704895,
+    "future_timestep": 166.0,
+    "context_timestep": 166.0
+  },
+  {
+    "step": 30,
+    "future_sigma": 0.11629515886306763,
+    "context_sigma": 0.11629515886306763,
+    "future_timestep": 116.0,
+    "context_timestep": 116.0
+  },
+  {
+    "step": 31,
+    "future_sigma": 0.07776966691017151,
+    "context_sigma": 0.07776966691017151,
+    "future_timestep": 77.0,
+    "context_timestep": 77.0
+  },
+  {
+    "step": 32,
+    "future_sigma": 0.04981577768921852,
+    "context_sigma": 0.04981577768921852,
+    "future_timestep": 49.0,
+    "context_timestep": 49.0
+  },
+  {
+    "step": 33,
+    "future_sigma": 0.03052404895424843,
+    "context_sigma": 0.03052404895424843,
+    "future_timestep": 30.0,
+    "context_timestep": 30.0
+  },
+  {
+    "step": 34,
+    "future_sigma": 0.017841218039393425,
+    "context_sigma": 0.017841218039393425,
+    "future_timestep": 17.0,
+    "context_timestep": 17.0
+  },
+  {
+    "step": 35,
+    "future_sigma": 0.009900989942252636,
+    "context_sigma": 0.009900989942252636,
+    "future_timestep": 9.0,
+    "context_timestep": 9.0
+  }
+]

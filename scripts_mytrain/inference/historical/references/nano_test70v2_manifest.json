@@ -1,0 +1,186 @@
+{
+  "benchmark": "test70_v2",
+  "fps": 30,
+  "cases": {
+    "difficulty_l2_f11_h085_sr048": {
+      "prompt": "A ball is moving across a raised table.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f11_h085_sr048/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f11_h085_sr048/videos/rgb_cycles.mp4",
+      "family": "F11",
+      "display_family": "桌高 · 开放式阁楼",
+      "context_video_sha256": "caaedeebefcf66f3cee47c9e315eece9a35e8fa245a7e913ded053ad49aad887",
+      "gt_video_sha256": "caaedeebefcf66f3cee47c9e315eece9a35e8fa245a7e913ded053ad49aad887"
+    },
+    "difficulty_l2_f12_a024": {
+      "prompt": "A wooden block is released from rest on an inclined surface.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f12_a024/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f12_a024/videos/rgb_cycles.mp4",
+      "family": "F12",
+      "display_family": "坡度 · 暖色素墙木地板住宅",
+      "context_video_sha256": "3fc1682e3f0c5018d4a1ec7d9118797b3138d63ac148b92f1dff0bd47e926ab7",
+      "gt_video_sha256": "3fc1682e3f0c5018d4a1ec7d9118797b3138d63ac148b92f1dff0bd47e926ab7"
+    },
+    "difficulty_l2_f12_length_l140": {
+      "prompt": "A wooden block is released from rest on an inclined surface.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f12_length_l140/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/difficulty_l2_f12_length_l140/videos/rgb_cycles.mp4",
+      "family": "F12_RAMP_LENGTH",
+      "display_family": "坡长 · 木地板咖啡吧",
+      "context_video_sha256": "06801f8953a296fe9c7849d8c01f7d0d1b30fbfaaa59f231617b4580bceba08c",
+      "gt_video_sha256": "06801f8953a296fe9c7849d8c01f7d0d1b30fbfaaa59f231617b4580bceba08c"
+    },
+    "scene_door_frame_ball_w054": {
+      "prompt": "A textured ball is moving on the floor toward an open doorway integrated into a wall.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_door_frame_ball_w054/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_door_frame_ball_w054/videos/rgb_cycles.mp4",
+      "family": "SCENE_DOOR_FRAME_BALL",
+      "display_family": "门洞宽度（球） · 暖色挂画客厅",
+      "context_video_sha256": "b65c714168bb68befb8b079906143ef348801c747cb995002378e88e9b951026",
+      "gt_video_sha256": "b65c714168bb68befb8b079906143ef348801c747cb995002378e88e9b951026"
+    },
+    "scene_door_frame_w054": {
+      "prompt": "A textured wooden block is moving on the floor toward an open doorway integrated into a wall.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_door_frame_w054/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_door_frame_w054/videos/rgb_cycles.mp4",
+      "family": "SCENE_DOOR_FRAME",
+      "display_family": "门洞宽度（木块） · 暖灰石材住宅玄关",
+      "context_video_sha256": "d943c7d2d0bc388cc88dc981672762be6c615ea37cb8963b121c156ff2bcd5fe",
+      "gt_video_sha256": "d943c7d2d0bc388cc88dc981672762be6c615ea37cb8963b121c156ff2bcd5fe"
+    },
+    "scene_puck_barrier_n060": {
+      "prompt": "A puck is moving across a floor.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_puck_barrier_n060/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/scene_puck_barrier_n060/videos/rgb_cycles.mp4",
+      "family": "SCENE_PUCK_BARRIER",
+      "display_family": "挡板法线角度 · 日照木地板客厅",
+      "context_video_sha256": "7b980890fc34b28645b22c1f2cc52377635e6f6749a1fcf0919a2a683619e6ec",
+      "gt_video_sha256": "7b980890fc34b28645b22c1f2cc52377635e6f6749a1fcf0919a2a683619e6ec"
+    },
+    "v2v_bowl_r180": {
+      "prompt": "A ball is on the inner wall of a curved bowl.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_bowl_r180/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_bowl_r180/videos/rgb_cycles.mp4",
+      "family": "V2V_BOWL",
+      "display_family": "碗曲率 · 壁画客厅",
+      "context_video_sha256": "e241108411eb8aee3d81a132b263e982fabb5b87bb665dfcb0203482e43844a2",
+      "gt_video_sha256": "e241108411eb8aee3d81a132b263e982fabb5b87bb665dfcb0203482e43844a2"
+    },
+    "v2v_domino_g090": {
+      "prompt": "A ball is moving across a floor.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_domino_g090/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_domino_g090/videos/rgb_cycles.mp4",
+      "family": "V2V_DOMINO",
+      "display_family": "多米诺间距 · 绿植休闲厅",
+      "context_video_sha256": "081d54b7eb826747e9edcaa3e731d5deea123e50eb88f99d21e61393e7607670",
+      "gt_video_sha256": "081d54b7eb826747e9edcaa3e731d5deea123e50eb88f99d21e61393e7607670"
+    },
+    "v2v_gap_038": {
+      "prompt": "A ball is moving across a raised platform.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4",
+      "family": "V2V_GAP",
+      "display_family": "缝隙宽度 · 浅色现代起居室",
+      "context_video_sha256": "7b50d115472e2d349c9078def7af780d25e4b99e2eeb3179b41b3a3625f18820",
+      "gt_video_sha256": "7b50d115472e2d349c9078def7af780d25e4b99e2eeb3179b41b3a3625f18820"
+    },
+    "v2v_door_ball_radius_r215": {
+      "prompt": "A textured ball is moving on the floor toward an open doorway integrated into a wall.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_door_ball_radius_r215/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_door_ball_radius_r215/videos/rgb_cycles.mp4",
+      "family": "V2V_OBSTACLE_SIZE",
+      "display_family": "固定门宽0.46 m／小球半径 · 经典橱柜厨房",
+      "context_video_sha256": "9b6d264859b0854830b367f71d32a465eccd6fa991d82b832f5ae11f5a1deb65",
+      "gt_video_sha256": "9b6d264859b0854830b367f71d32a465eccd6fa991d82b832f5ae11f5a1deb65"
+    },
+    "v2v_flat_to_ramp_v320": {
+      "prompt": "A textured ball is moving across a flat floor toward an upward sloping solid ramp.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_flat_to_ramp_v320/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_flat_to_ramp_v320/videos/rgb_cycles.mp4",
+      "family": "V2V_OBSTACLE",
+      "display_family": "平地转上坡／初速度 · 窗光开阔房间",
+      "context_video_sha256": "e718774400c296b4b815fd19177a8624848d5c0605013084504c527f049b0f37",
+      "gt_video_sha256": "e718774400c296b4b815fd19177a8624848d5c0605013084504c527f049b0f37"
+    },
+    "v2v_pendulum_cabinet_xm0750": {
+      "prompt": "A textured pendulum ball hangs from a dark blue rope at an angle beside a tall cabinet. The wooden support post stands directly on the floor.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_pendulum_cabinet_xm0750/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_pendulum_cabinet_xm0750/videos/rgb_cycles.mp4",
+      "family": "V2V_PENDULUM_CABINET",
+      "display_family": "固定摆锤／柜体位置 · 简洁石材房间",
+      "context_video_sha256": "258cc06e2b464fcc1602b940356dca59c7212e2eb9fd5d1c41c03495116f7d3f",
+      "gt_video_sha256": "258cc06e2b464fcc1602b940356dca59c7212e2eb9fd5d1c41c03495116f7d3f"
+    },
+    "v2v_pendulum_l110": {
+      "prompt": "A pendulum bob is suspended at an angle.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_pendulum_l110/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_pendulum_l110/videos/rgb_cycles.mp4",
+      "family": "V2V_PENDULUM",
+      "display_family": "摆长 · 简洁木墙挑高室内",
+      "context_video_sha256": "74c114a7ad6f5b80d83e0aad0724ce8045178837944c218b7b54cb6d480ae41d",
+      "gt_video_sha256": "74c114a7ad6f5b80d83e0aad0724ce8045178837944c218b7b54cb6d480ae41d"
+    },
+    "v2v_seesaw_x058": {
+      "prompt": "A block rests on a hinged board.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_seesaw_x058/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_seesaw_x058/videos/rgb_cycles.mp4",
+      "family": "V2V_SEESAW",
+      "display_family": "跷跷板位置 · 浅暖灰墙与深色地面",
+      "context_video_sha256": "179ccf2c1ffbe866cdf30ffeb114430bc5d464c1429a2fe78149bbbf620080fe",
+      "gt_video_sha256": "179ccf2c1ffbe866cdf30ffeb114430bc5d464c1429a2fe78149bbbf620080fe"
+    },
+    "geo6_01_cylinder_offset_02": {
+      "prompt": "A textured ball moves across a supported table toward a fixed cylindrical obstacle.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_01_cylinder_offset_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_01_cylinder_offset_02/videos/rgb_cycles.mp4",
+      "family": "GEO_CYLINDER_OFFSET",
+      "display_family": "圆柱障碍横向偏移 · 日照木地板客厅",
+      "context_video_sha256": "8a594d7fa9a93ba5dcf9dff02e4531dbc985d1925858ad1aafb289eb4af99033",
+      "gt_video_sha256": "8a594d7fa9a93ba5dcf9dff02e4531dbc985d1925858ad1aafb289eb4af99033"
+    },
+    "geo6_02_barrier_length_02": {
+      "prompt": "A textured ball moves across a supported table toward an angled wooden barrier.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_02_barrier_length_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_02_barrier_length_02/videos/rgb_cycles.mp4",
+      "family": "GEO_BARRIER_LENGTH",
+      "display_family": "有限挡板长度 · 绿植休闲厅",
+      "context_video_sha256": "72cef530973f7b0f89780b1903cf5e3322ee5863c669e701ad57479f258a6b39",
+      "gt_video_sha256": "72cef530973f7b0f89780b1903cf5e3322ee5863c669e701ad57479f258a6b39"
+    },
+    "geo6_03_rail_gap_02": {
+      "prompt": "A textured ball rolls from a raised platform toward two parallel supporting rails.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_03_rail_gap_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_03_rail_gap_02/videos/rgb_cycles.mp4",
+      "family": "GEO_RAIL_GAP",
+      "display_family": "双轨净间距 · 简洁暖色住宅",
+      "context_video_sha256": "e788b9d8a9286e730ee4634253fdf2ef7a36bfb7c5a7af5a68ff28df961adff7",
+      "gt_video_sha256": "e788b9d8a9286e730ee4634253fdf2ef7a36bfb7c5a7af5a68ff28df961adff7"
+    },
+    "geo6_04_hump_height_02": {
+      "prompt": "A textured ball rolls along a raised track toward a smooth hump.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_04_hump_height_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_04_hump_height_02/videos/rgb_cycles.mp4",
+      "family": "GEO_HUMP_HEIGHT",
+      "display_family": "坡峰高度 · 暖色素墙木地板住宅",
+      "context_video_sha256": "b8eb327d228789624ab2d4d2e50a88f92415ce689364408db197600d86c1ed91",
+      "gt_video_sha256": "b8eb327d228789624ab2d4d2e50a88f92415ce689364408db197600d86c1ed91"
+    },
+    "geo6_05_hole_offset_02": {
+      "prompt": "A textured ball moves across a solid platform with a rectangular opening.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_05_hole_offset_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_05_hole_offset_02/videos/rgb_cycles.mp4",
+      "family": "GEO_HOLE_OFFSET",
+      "display_family": "台面孔洞横向位置 · 浅色现代起居室",
+      "context_video_sha256": "8d2c94b1ba3365ed5ff51d9415d8a66448c6a6de010b885da48359d008517121",
+      "gt_video_sha256": "8d2c94b1ba3365ed5ff51d9415d8a66448c6a6de010b885da48359d008517121"
+    },
+    "geo6_06_table_edge_02": {
+      "prompt": "A textured ball moves toward a wooden block resting near the edge of a raised platform.",
+      "context_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_06_table_edge_02/videos/rgb_cycles.mp4",
+      "gt_video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/geo6_06_table_edge_02/videos/rgb_cycles.mp4",
+      "family": "GEO_TABLE_EDGE",
+      "display_family": "被撞方块与桌缘 · 暖灰石材住宅玄关",
+      "context_video_sha256": "dc7bf287bfe87d130f0cd2eccd7031d94ed9eed5d91e403257434d13068f64e9",
+      "gt_video_sha256": "dc7bf287bfe87d130f0cd2eccd7031d94ed9eed5d91e403257434d13068f64e9"
+    }
+  }
+}

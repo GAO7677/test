@@ -1,0 +1,15 @@
+{
+  "benchmark": "test70",
+  "fps": 30,
+  "cases": {
+    "v2v_gap_038": {
+      "prompt": "A ball is moving across a raised platform.",
+      "context_video": "/data/gaoya/AAA_test_video/physv_v2v_0819/samples/v2v_gap_038/context/context8_cycles.mp4",
+      "gt_video": "/data/gaoya/AAA_test_video/physv_v2v_0819/samples/v2v_gap_038/videos/rgb_cycles.mp4",
+      "input_json": "/data/gaoya/agent-data/physv_v2v_0819/manifests/test70_initial_state_v1/v2v_gap_038.json",
+      "family": "V2V_GAP",
+      "context_video_sha256": "90be8c44e5d2c4d87228087a2719102e5c6ec3b6a17c2793ce950916484b5af2",
+      "gt_video_sha256": "f2979b6983042885473d99d47a474a356dc419763916138233fcb1a8ebfdc635"
+    }
+  }
+}

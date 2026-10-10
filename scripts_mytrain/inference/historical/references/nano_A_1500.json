@@ -1,0 +1,91 @@
+{
+  "paths": {
+    "model": "/data/gaoya/ckpt/nvidia-Cosmos3-Nano",
+    "data": "/data/gaoya/dataset/new_data0826",
+    "selection": "/data/gaoya/dataset/new_data0826/my_process/case_indexes/generic_full_2175/case_json_paths.txt",
+    "cache": "/data/gaoya/agent-data/cache/cosmos_nano/generic2175_initial0907",
+    "output": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000"
+  },
+  "lora": {
+    "rank": 32,
+    "alpha": 64,
+    "dropout": 0.0,
+    "target_modules": [
+      "self_attn.add_q_proj",
+      "self_attn.add_k_proj",
+      "self_attn.add_v_proj",
+      "self_attn.to_add_out",
+      "mlp_moe_gen.gate_proj",
+      "mlp_moe_gen.up_proj",
+      "mlp_moe_gen.down_proj"
+    ]
+  },
+  "data": {
+    "count": 2175,
+    "frames": 49,
+    "height": 512,
+    "width": 896,
+    "fps": 24,
+    "caption_field": "caption_initial0907",
+    "context_latents": 2,
+    "context_rgb_frames": 8
+  },
+  "training": {
+    "seed": 42,
+    "max_steps": 3000,
+    "per_gpu_batch": 1,
+    "grad_accum": 4,
+    "save_every": 500,
+    "master_dtype": "float32",
+    "compute_dtype": "bfloat16",
+    "gradient_checkpointing": true,
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-06,
+    "weight_decay": 0.0,
+    "max_grad_norm": 0.1,
+    "lr_schedule": "cosine",
+    "warmup_steps": 100,
+    "smoke_samples": 8
+  },
+  "noise": {
+    "shift": 5.0,
+    "waver_s": 1.29,
+    "num_train_timesteps": 1000,
+    "context_scales": {
+      "C": 0.0,
+      "A": 1.0,
+      "N75": 0.75
+    }
+  },
+  "runtime": {
+    "train_gpus": [
+      0,
+      1
+    ],
+    "prepare_gpu": 5,
+    "evaluation_gpu": 2,
+    "cpu_threads": 4,
+    "cuda_allocator": "expandable_segments:False"
+  },
+  "evaluation": {
+    "steps": 40,
+    "seed": 42,
+    "guidance_scale": 6.0,
+    "flow_shift": 10.0,
+    "benchmarks": [
+      "test89",
+      "test70"
+    ]
+  },
+  "wandb": {
+    "enabled": true,
+    "project": "physrvg-full-sa",
+    "entity": "875222004-gy",
+    "group": "cosmos3-nano-generic2175-gen-attn-ffn-r32-3000",
+    "upload_checkpoints": true
+  }
+}

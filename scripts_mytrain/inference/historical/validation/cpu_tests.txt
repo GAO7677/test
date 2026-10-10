@@ -1,0 +1,13 @@
+test_clean_entry_rejects_noisy_reference (test_reproduction.HistoricalParity) ... ok
+test_equal_video_cannot_hide_different_model_inputs (test_reproduction.HistoricalParity) ... ok
+test_every_frozen_file_has_original_hash (test_reproduction.HistoricalParity) ... ok
+test_nano_old_and_new_input_are_distinct (test_reproduction.HistoricalParity) ... ok
+test_nano_sampling_and_default_hook_are_unchanged (test_reproduction.HistoricalParity) ... ok
+test_predict_sampling_and_hook_are_unchanged (test_reproduction.HistoricalParity) ... ok
+test_six_default_references_are_valid (test_reproduction.HistoricalParity) ... ok
+test_wan_sampler_and_noise_are_unchanged (test_reproduction.HistoricalParity) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.325s
+
+OK

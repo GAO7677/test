@@ -1,0 +1,19 @@
+{
+  "methods": ["C", "N25", "N50", "N75", "A", "B"],
+  "cases": "test70_all",
+  "seeds": [42],
+  "inference_context_noise_scales": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "mapping": "training_nearest_paired_sigma_endpoint_bypass",
+  "gpus": [0, 1],
+  "frames": 49,
+  "height": 512,
+  "width": 896,
+  "steps": 40,
+  "do_cfg": false,
+  "export_fps": 30,
+  "context_latents": 2,
+  "cpu_threads_per_worker": 1,
+  "run_pilot": false,
+  "metrics_after_all_generation": true,
+  "publish_interval_seconds": 30
+}

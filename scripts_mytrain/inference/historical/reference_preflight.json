@@ -1,0 +1,483 @@
+{
+  "status": "PASS",
+  "count": 68,
+  "gpu_rerun": false,
+  "references": [
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/A/step1000/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/A/step1500/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/A/step1000/shared075/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/A/step1500/shared075/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1000/noise050/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1500/noise050/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1000/noise090/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1500/noise090/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1000/noise100/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/A/step1500/noise100/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/C/step1000/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/C/step1500/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/C/step1000/shared075/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-extension/C/step1500/shared075/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1000/noise050/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1500/noise050/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1000/noise090/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1500/noise090/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1000/noise100/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/ac-noise-sweep/C/step1500/noise100/results/v2v_gap_038/result.json",
+      "profile": "ac_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1000/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1500/clean/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1000/matched/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1500/matched/results/v2v_gap_038/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise-sweep/step1000/noise050/results/v2v_gap_038/result.json",
+      "profile": "n75_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise-sweep/step1500/noise050/results/v2v_gap_038/result.json",
+      "profile": "n75_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise-sweep/step1000/noise090/results/v2v_gap_038/result.json",
+      "profile": "n75_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise-sweep/step1500/noise090/results/v2v_gap_038/result.json",
+      "profile": "n75_sweep",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise100/step1000/noise100/results/v2v_gap_038/result.json",
+      "profile": "n75_100",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/n75-noise100/step1500/noise100/results/v2v_gap_038/result.json",
+      "profile": "n75_100",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__C__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__C__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__C__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__C__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__C__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N25__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N25__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N25__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N25__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N25__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N50__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N50__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N50__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N50__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N50__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__A__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__A__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__A__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__A__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__A__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__B__seed42__noise0/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__B__seed42__noise0.25/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__B__seed42__noise0.5/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__B__seed42__noise0.75/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "wan",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__B__seed42__noise1/result.json",
+      "profile": "test70_fixed_initial_noise",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1000/clean/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1000/matched/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1000/clean_noisy/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1500/clean/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1500/matched/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "predict25",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1500/clean_noisy/results/v2v_gap_038/result.json",
+      "profile": "triplet",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "noisy",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test89/noise/nano_campaign/noise/A/lambda-0.75/results/case_125_C/result.json",
+      "profile": "early",
+      "status": "PASS"
+    },
+    {
+      "backbone": "nano",
+      "arm": "clean",
+      "reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test89/clean/nano/N75/step-001500/results/case_125_C/result.json",
+      "profile": "v2",
+      "status": "PASS"
+    }
+  ]
+}

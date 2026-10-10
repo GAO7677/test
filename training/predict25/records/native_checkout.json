@@ -1,0 +1,13 @@
+{
+  "training_recorded_commit": "a2c298b0a3df3778b973fe65e9e58877b292d8a7",
+  "verified_files": [
+    "scripts/train.py",
+    "packages/cosmos-oss/cosmos_oss/scripts/train.py",
+    "cosmos_predict2/_src/imaginaire/trainer.py",
+    "cosmos_predict2/_src/predict2/models/video2world_model_rectified_flow.py",
+    "cosmos_predict2/_src/predict2/models/text2world_model_rectified_flow.py",
+    "LICENSE"
+  ],
+  "status": "ALL_INCLUDED_NATIVE_FILES_MATCH_TRAINING_RECORDED_GIT_BLOBS",
+  "limitation": "Matching git blobs does not establish absence of unrecorded working-tree changes during historical training."
+}

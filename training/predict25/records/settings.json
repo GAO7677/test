@@ -1,0 +1,83 @@
+{
+  "dataset": "/data/gaoya/agent-data/datasets/cosmos_predict25_official/generic2175_initial0907",
+  "native_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/base/post-trained/81edfebe-bd6a-4039-8c1d-737df1a790bf_ema_bf16.pt",
+  "vae_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/tokenizer.pth",
+  "text_weights": "/data/gaoya/ckpt/Cosmos-Reason1-7B",
+  "output": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights",
+  "frames": 49,
+  "height": 512,
+  "width": 896,
+  "fps": 24,
+  "cudnn_benchmark": false,
+  "context_latents": 2,
+  "modes": [
+    "N75"
+  ],
+  "context_noise_scales": {
+    "A": 1.0,
+    "C": 0.0,
+    "N75": 0.75
+  },
+  "time_distribution": "waver_mode_1.29",
+  "shift": 5,
+  "per_gpu_batch": 4,
+  "world_size": 2,
+  "grad_accum": 1,
+  "effective_batch": 8,
+  "max_steps": 3000,
+  "save_every": 500,
+  "lora_rank": 32,
+  "lora_alpha": 64,
+  "lora_target_modules": "q_proj,k_proj,v_proj,output_proj,mlp.layer1,mlp.layer2",
+  "learning_rate": 0.0001,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "eps": 1e-06,
+  "weight_decay": 0.0,
+  "warmup": 100,
+  "clip_norm": 0.1,
+  "seed": 42,
+  "precision": "bfloat16",
+  "lora_precision": "float32",
+  "wandb_project": "physrvg-full-sa",
+  "wandb_entity": "875222004-gy",
+  "wandb_group": "predict25-official-posttrained-acn75",
+  "cache_policy": "official_online_video_latents_and_raw_text_embeddings",
+  "initialization": "fresh_native_posttrained_no_previous_adapter",
+  "text_cache": "/data/gaoya/agent-data/cache/cosmos_predict25_official/20261004_generic2175_full_v2/text",
+  "checkpoint_model_storage": "lora_and_training_counters",
+  "checkpoint_training_state": [
+    "optimizer",
+    "scheduler",
+    "grad_scaler"
+  ],
+  "context_noise_grid": {
+    "size": 1000,
+    "unshifted_max": 1.0,
+    "unshifted_min": 0.001,
+    "nearest": true
+  },
+  "spatial_preprocess": "official_VideoDataset_antialiased_resize",
+  "temporal_preprocess": "prefix49",
+  "native_checkpoint_sha256": "565bbb2c9645737327983f4461e4d32627bba465b0a8dc26447edea144e1ff47",
+  "vae_checkpoint_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "cache_root": "/data/gaoya/agent-data/cache/cosmos_predict25_official/20261004_generic2175_full_v2",
+  "latent_cache": "/data/gaoya/agent-data/cache/cosmos_predict25_official/20261004_generic2175_full_v2/latents",
+  "cache_output": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_official_full_cache",
+  "cache_batch_size": 2,
+  "run_name": "train_N75_mb4",
+  "compatibility_reports": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights",
+  "memory_probe_summary": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_memory_mb4_gpu01/summary.json",
+  "cache_validation_policy": "fixed_validated_cache",
+  "cache_reference_encoding_batch": 2,
+  "cache_policy_decision": "User explicitly chose fixed verified batch2 encoder cache for DiT training batch4; batch4 online encoding equivalence is not required for this run.",
+  "upload_checkpoints": false,
+  "gpus": [
+    0,
+    1
+  ],
+  "restart_from_zero": true,
+  "previous_run": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_official"
+}

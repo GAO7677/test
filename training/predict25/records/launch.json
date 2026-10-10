@@ -1,0 +1,12 @@
+{
+  "program": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/scripts/train.py",
+  "args": [
+    "--config=projects/generic_acn75/n75_mb4_config.py"
+  ],
+  "git": {
+    "remote": "https://github.com/nvidia-cosmos/cosmos-predict2.5.git",
+    "commit": "a2c298b0a3df3778b973fe65e9e58877b292d8a7"
+  },
+  "python": "CPython 3.10.18",
+  "executable": "/data/gaoya/agent-data/envs/cosmos_predict25_official/bin/python"
+}

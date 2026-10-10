@@ -17,3 +17,5 @@ Wan、Cosmos3-Nano、Cosmos-Predict2.5 的历史 clean / context 加噪推理代
 不包含后续 RePaint、回跳或提前 n 步变体。保留源文件中的既有版权与许可声明；上游模型和依赖遵循各自的许可。
 
 新增 [context / future 同等级推理实验](scripts_mytrain/inference/equal_sigma/README.md)：三个新视频及 [九视频对比页](demos/gap038/comparison.html)，独立于原六个历史入口。对比页需通过本地 HTTP 服务打开，启动命令见实验说明。
+
+[Demo 权重对应的实际训练入口、源码快照和配置](training/README.md)：Wan N75 step1000、Nano/Predict2.5 N75 step1500。Wan 完整训练当日源码版本尚无法确认；证据范围见训练说明。

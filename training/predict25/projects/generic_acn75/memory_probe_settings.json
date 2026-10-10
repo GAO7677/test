@@ -1,0 +1,10 @@
+{
+  "per_gpu_batch": 4,
+  "world_size": 2,
+  "grad_accum": 1,
+  "effective_batch": 8,
+  "optimizer_steps": 2,
+  "modes": ["A", "C", "N75"],
+  "output": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_memory_mb4_gpu01",
+  "purpose": "Memory feasibility with existing complete cache; not an online encoder batch4 equivalence validation"
+}

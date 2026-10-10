@@ -1,0 +1,17 @@
+{
+  "rank": 32,
+  "alpha": 64,
+  "dropout": 0.0,
+  "target_modules": [
+    "self_attn.add_q_proj",
+    "self_attn.add_k_proj",
+    "self_attn.add_v_proj",
+    "self_attn.to_add_out",
+    "mlp_moe_gen.gate_proj",
+    "mlp_moe_gen.up_proj",
+    "mlp_moe_gen.down_proj"
+  ],
+  "base_model": "/data/gaoya/ckpt/nvidia-Cosmos3-Nano",
+  "format": "named_lora_parameters",
+  "inference_loader": "evaluate.py"
+}

@@ -1,0 +1,332 @@
+[
+  {
+    "file": "wan/workspace/scripts_mytrain/train/train_full_sa_pybullet_rl_lora_raw.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/train/train_full_sa_pybullet_rl_lora_raw.py",
+    "sha256": "0bd8cf58475103267c88b650424d3aebcc5a60f4e5496367bba1062e90d817aa",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/scripts_mytrain/train/train_full_sa_pybullet_aux.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/train/train_full_sa_pybullet_aux.py",
+    "sha256": "112eea58d7c53a741be201e86aedae8b1a352373fa9da104e468652fba6a4188",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/scripts_mytrain/train/train_full_sa_pybullet.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/train/train_full_sa_pybullet.py",
+    "sha256": "adb37ed264c4784fe38cdb1b73a172ff9fd28f4386db1b45548d9a8cb2b18dbb",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/scripts_mytrain/train/collision_supervision.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/train/collision_supervision.py",
+    "sha256": "eadfacf84a3475d8b292b827dce17b0412a7d8b0972f00d9d88f2bf1ceee1a08",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/scripts_mytrain/data/pybullet_cached_dataset.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/data/pybullet_cached_dataset.py",
+    "sha256": "246a5e52be2b653563c06e0f604724be55e49677fae5c8462862a1b1fc533cdf",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/fastvideo/lora_profiles.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/fastvideo/lora_profiles.py",
+    "sha256": "53273eb8573042dab036bb6eabdf937892008a92ed779a7a8fa9424baf7eb3c6",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/fastvideo/models/wan_v2v/model_wan_v2v.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/fastvideo/models/wan_v2v/model_wan_v2v.py",
+    "sha256": "0a314485c4d3be907b95bc0605389f70445d19fe628a2d6e2107338d421f9d1b",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/fastvideo/models/wan_v2v/context_only_attention.py",
+    "original": "/home/gaoya/code_V2V_baselines/PhysRVG-main/fastvideo/models/wan_v2v/context_only_attention.py",
+    "sha256": "f7642008342fdcc693a79d55ec00916673a2d557b69b975ca9be899dabe62b7d",
+    "provenance": "current_workspace_not_training_time_snapshot"
+  },
+  {
+    "file": "wan/workspace/scripts_mytrain/train/frozen_motion_probe.py",
+    "original": "/home/gaoya/Code_Video/Code_data/Code_vjepa_vggt/code_vjepa_vggt/train_xSSC/object_self_attn_lora_experiments/attention_trajectory_distillation_project/frozen_motion_probe.py",
+    "sha256": "94c4434745d3e728d82576a3d984bf1004f3bf60318a719089b5046a5b2da299",
+    "provenance": "current_external_import_copied_to_existing_fallback_location"
+  },
+  {
+    "file": "wan/records/resolved_config.json",
+    "original": "/data/gaoya/agent-data/checkpoints/generic2175_initial0907_context_noise_20260923/lambda075-initial0907-seed42-gpu01-interrupt/resolved_config.json",
+    "sha256": "3d166fb5da5b1d14c271f81deafffba16610ad50fb494f93cd90957f90bdab61",
+    "provenance": "training_run_record"
+  },
+  {
+    "file": "wan/records/step-001000_adapter_config.json",
+    "original": "/data/gaoya/agent-data/checkpoints/generic2175_initial0907_context_noise_20260923/lambda075-initial0907-seed42-gpu01-interrupt/checkpoints/step-001000/adapter_config.json",
+    "sha256": "b599854923f49f3f02fd872fc22d7f8ea6d4df50605d1edce422ceb1f3ca5868",
+    "provenance": "demo_checkpoint_record"
+  },
+  {
+    "file": "nano/source/common.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/common.py",
+    "sha256": "4bb6a414737717a97eb36ae14d0a6b4321236a557ecb4cb96e8733e623e81c77",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/prepare.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/prepare.py",
+    "sha256": "4a60455fd66b77b606b7dbf5c131f568c1f2ef1e53c4ec722475e372eecd95ad",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/inspect_config.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/inspect_config.py",
+    "sha256": "c16248b519651a253a488e18d7840583befeac7ddec956c6dab4c5a8c8c2fc06",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/experiment.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/experiment.json",
+    "sha256": "a33e2e33e11e50a3df84b607ef8283885f52e247bfa0317cf0b2a0fba35d50b1",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/train.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/train.py",
+    "sha256": "7cca409bfe7dec0f3b82ecf96df98e3deac2f53ca830fa083d2987c8cac3df77",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/README.md",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/README.md",
+    "sha256": "7929ad1effc2a200c398ab958d7f81e550855a17d261ee6e73a2a90692589de2",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/cuda_loader.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/cuda_loader.py",
+    "sha256": "2151124b9a4e3141c305ba23664b16efd9c99a71ab782a3d9662747936a9a888",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/test_configuration.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/test_configuration.py",
+    "sha256": "59e0f623d9376754d80f82b23885250a9cf074d4931a0391428e19bbcc36779c",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/evaluate.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/evaluate.py",
+    "sha256": "9fd1620768d66894c04aab1b3b2a735aaae1d0abcbf39f5119f3467b0685272f",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/queue_worker.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/queue_worker.py",
+    "sha256": "ef10dce4efe5aebb0004be951a2fef7c81e3ece4b3768da3ae3d0b56c3b76eda",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/settings.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/settings.py",
+    "sha256": "483d76a13b8fd260b17dc07eea1559ec82a27b8267f666151100fe1e56d04df1",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/run_campaign.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/run_campaign.py",
+    "sha256": "119c696a65b4b2215c7bf390c9c9402ebad409b42ae6319fd7ae625af033bba8",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source/test_contracts.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source/test_contracts.py",
+    "sha256": "b5a9b057950568df67c5f7790ca0b509e399b86b63520b1ccc8be91470e155e5",
+    "provenance": "training_run_snapshot_verified_by_original_source_hashes"
+  },
+  {
+    "file": "nano/source_hashes.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/source_hashes.json",
+    "sha256": "9b9cc5624f3971f9e994feb7558cb9a4d7446ca157bc3cf18e6235281cca62c6",
+    "provenance": "training_run_or_checkpoint_record"
+  },
+  {
+    "file": "nano/configs/N75.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/configs/N75.json",
+    "sha256": "9125274518b032d126a6d5e8a2de8fcf5a2bcce64e8eb3173a143281a1bf2507",
+    "provenance": "training_run_or_checkpoint_record"
+  },
+  {
+    "file": "nano/records/step-001500_complete.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/N75/step-001500/complete.json",
+    "sha256": "15e858d7e5381b2928bf4cd48556768333a220e6952adc9ca5277be28b51d88e",
+    "provenance": "training_run_or_checkpoint_record"
+  },
+  {
+    "file": "nano/records/step-001500_adapter_config.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/N75/step-001500/adapter_config.json",
+    "sha256": "344beed522e7b819d0ea8a7dc473a381cc1b645ced6b76281eb9d9c4c8804da5",
+    "provenance": "training_run_or_checkpoint_record"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/__init__.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/__init__.py",
+    "sha256": "20268b464f93e929fde866627d8b23acdc47c5468a16c835b49861e5ad1a82dc",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/n75_mb4_config.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/n75_mb4_config.py",
+    "sha256": "492446fc14d2afaf90c3da20c04ec5935f24281933a805e93f87534cb26aa4c3",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/n75_mb4_settings.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/n75_mb4_settings.json",
+    "sha256": "9ada03e253955c52c4913165abf0273a90e3a2af198d79413056e414c18a8149",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/config.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/config.py",
+    "sha256": "d52473ec2435ba99d0e4629c70c465ae56708c070763648be2e4584a2945fa8c",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/model.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/model.py",
+    "sha256": "dcbeb3b74778a1bc402068247cb3b6a0597de2e3c59ea1ddccbd40cb948c39b1",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/mechanism.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/mechanism.py",
+    "sha256": "66dbbca0e294902565c67f3e9665368fe4c69d25eaeaa1ae3484e74260331721",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/data.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/data.py",
+    "sha256": "5bf77c0f9d27d3ad93ac08737ec9b3ae214956a86062cb7f43100b2666ca9feb",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/text.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/text.py",
+    "sha256": "a3283d2638be964bf55cbf4afd9ca4ea990e2f4271d6c7b9ad0af03a87e2e592",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/audit.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/audit.py",
+    "sha256": "e2666cbdb9e5b85e0f62c5fc5980aea745d26ef173d6806401f4689b67fbf8c4",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/env.sh",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/env.sh",
+    "sha256": "b79ea26aaf42901cad2c2d377d27ef1a1b258b4f2214922def7d33f627d6fece",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/run_n75_mb4.sh",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/run_n75_mb4.sh",
+    "sha256": "69ab4b8892aa00cd0a18e47adb96fe36f6d129f12b023806a23ef168aee1c3ac",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/verify_cache.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/verify_cache.py",
+    "sha256": "dd384b82a4c9f73f1b498fe0325615e5f3d967cd88cf363de4c48b1f15e7cbad",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/summarize_memory_probe.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/summarize_memory_probe.py",
+    "sha256": "c381140ccc19abb9f7942cb125ebd2d6595d5b05171b24d4b540da33bda39bb5",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/settings.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/settings.json",
+    "sha256": "36a8478a87113eaa069478e34cf270f35aac89f1e1e4e995b2ffe8fa99eb35eb",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/prepare_cache.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/prepare_cache.py",
+    "sha256": "924e508cb1ee63133b72966e1a2ef5aa741f6e10f29457ec6501375f42a0ec9b",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/prepare_text.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/prepare_text.py",
+    "sha256": "0f8bf73230349895b56104c544eaa277d50bec363c414566c2dd4f2ac5945489",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/test_mechanism.py",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/test_mechanism.py",
+    "sha256": "6fd1fad4a55c7d2eb2b51148229b39257351f30c5b0823039dcc88d5afe3c40a",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/projects/generic_acn75/memory_probe_settings.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/code_snapshot/memory_probe_settings.json",
+    "sha256": "50fd4df265dc104f832f705c1d5a15f90ad44ecdd24e3070aa888df987ff1921",
+    "provenance": "training_run_code_snapshot"
+  },
+  {
+    "file": "predict25/records/settings.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/settings.json",
+    "sha256": "9ada03e253955c52c4913165abf0273a90e3a2af198d79413056e414c18a8149",
+    "provenance": "training_run_record"
+  },
+  {
+    "file": "predict25/records/original_run_README.md",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/README.md",
+    "sha256": "ee622cc6f164c62226fcc715d327b1d1491a6ed7d6c3528c5561feb994c3c97d",
+    "provenance": "training_run_record"
+  },
+  {
+    "file": "predict25/records/step001500_metadata.json",
+    "original": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/physrvg-full-sa/predict25-official-posttrained-acn75/train_N75_mb4/adapters/step001500/metadata.json",
+    "sha256": "73bec4abf36d517aa79ba70920e36efccdcd901f80ff5a52e6772fe371ace512",
+    "provenance": "demo_checkpoint_record"
+  },
+  {
+    "file": "predict25/native/scripts/train.py",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/scripts/train.py",
+    "sha256": "d1fc002f75609bb1dad587c2923e16132d1ff05f42a4c5b1da8dbf24bb7cfe2a",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  },
+  {
+    "file": "predict25/native/packages/cosmos-oss/cosmos_oss/scripts/train.py",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/packages/cosmos-oss/cosmos_oss/scripts/train.py",
+    "sha256": "e4e1c56e722cc277cc8c0ff1a29ee1edd4c8257e69c1a4123ac677782f0db4df",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  },
+  {
+    "file": "predict25/native/cosmos_predict2/_src/imaginaire/trainer.py",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/cosmos_predict2/_src/imaginaire/trainer.py",
+    "sha256": "5c6a7d8522e6ec9e5a4b5a2421632493b0a649f36ba132b826cc3826da92fadb",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  },
+  {
+    "file": "predict25/native/cosmos_predict2/_src/predict2/models/video2world_model_rectified_flow.py",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/cosmos_predict2/_src/predict2/models/video2world_model_rectified_flow.py",
+    "sha256": "9b53e3f024e5cbb2cb3778819e1a6fd353923c13ad9b868d99602051640a65e8",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  },
+  {
+    "file": "predict25/native/cosmos_predict2/_src/predict2/models/text2world_model_rectified_flow.py",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/cosmos_predict2/_src/predict2/models/text2world_model_rectified_flow.py",
+    "sha256": "c6c68f297859e11c76d2921667a29cabfecef3a7b5d3ab831bf9bb54b25b7d87",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  },
+  {
+    "file": "predict25/native/LICENSE",
+    "original": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/LICENSE",
+    "sha256": "7382b1cf711e7a7c7af9816e0e07b49b91e7149b7c6d347225f98800fcb1f1c2",
+    "provenance": "matches_git_blob_at_training_recorded_commit"
+  }
+]

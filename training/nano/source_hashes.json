@@ -1,0 +1,15 @@
+{
+  "common.py": "4bb6a414737717a97eb36ae14d0a6b4321236a557ecb4cb96e8733e623e81c77",
+  "prepare.py": "4a60455fd66b77b606b7dbf5c131f568c1f2ef1e53c4ec722475e372eecd95ad",
+  "inspect_config.py": "c16248b519651a253a488e18d7840583befeac7ddec956c6dab4c5a8c8c2fc06",
+  "experiment.json": "a33e2e33e11e50a3df84b607ef8283885f52e247bfa0317cf0b2a0fba35d50b1",
+  "train.py": "7cca409bfe7dec0f3b82ecf96df98e3deac2f53ca830fa083d2987c8cac3df77",
+  "README.md": "7929ad1effc2a200c398ab958d7f81e550855a17d261ee6e73a2a90692589de2",
+  "cuda_loader.py": "2151124b9a4e3141c305ba23664b16efd9c99a71ab782a3d9662747936a9a888",
+  "test_configuration.py": "59e0f623d9376754d80f82b23885250a9cf074d4931a0391428e19bbcc36779c",
+  "evaluate.py": "9fd1620768d66894c04aab1b3b2a735aaae1d0abcbf39f5119f3467b0685272f",
+  "queue_worker.py": "ef10dce4efe5aebb0004be951a2fef7c81e3ece4b3768da3ae3d0b56c3b76eda",
+  "settings.py": "483d76a13b8fd260b17dc07eea1559ec82a27b8267f666151100fe1e56d04df1",
+  "run_campaign.py": "119c696a65b4b2215c7bf390c9c9402ebad409b42ae6319fd7ae625af033bba8",
+  "test_contracts.py": "b5a9b057950568df67c5f7790ca0b509e399b86b63520b1ccc8be91470e155e5"
+}

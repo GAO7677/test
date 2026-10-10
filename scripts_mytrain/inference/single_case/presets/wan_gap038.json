@@ -1,0 +1,23 @@
+{
+  "video": "/data/gaoya/AAA_test_video/physv_v2v_0819/samples/v2v_gap_038/context/context8_cycles.mp4",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/data/gaoya/ckpt/Wan-AI-Wan2.2-TI2V-5B-Diffusers",
+  "adapter": "/data/gaoya/agent-data/checkpoints/generic2175_initial0907_context_noise_20260923/lambda075-initial0907-seed42-gpu01-interrupt/checkpoints/step-001000",
+  "physrvg_dit_checkpoint": "/data/gaoya/agent-data/weights/physrvg-diffusers-d8caf2/dit/diffusion_pytorch_model.safetensors",
+  "seed": 42,
+  "steps": 40,
+  "fps": 30,
+  "guidance": 5.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "training_timesteps": 1000,
+  "context_cache": "/data/gaoya/AAA_test_video/physv_v2v_0819/test70_context_cache_20260929/context_latents/v2v_gap_038.safetensors",
+  "prompt_cache": "/data/gaoya/AAA_test_video/physv_v2v_0819/test70_context_cache_20260929/prompts/c42b7e1225dfbd68f5ad9e8e.safetensors",
+  "cache_video_sha256": "90be8c44e5d2c4d87228087a2719102e5c6ec3b6a17c2793ce950916484b5af2",
+  "cache_prompt": "A ball is moving across a raised platform.",
+  "backbone": "wan",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "noisy"
+}

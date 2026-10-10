@@ -1,0 +1,250 @@
+{
+  "status": "NOT_ALL_NINE_BYTE_EXACT",
+  "reference_scope": "Published nine gap038 demo MP4s, with original historical references reported separately",
+  "gpu_completed": 9,
+  "byte_exact_to_published": 6,
+  "cpu_contract_tests": 5,
+  "results": [
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/wan_clean.mp4",
+      "reference_sha256": "e609f694926c33b6caddf914f05c6740f8c0774499a81b999fb0c20fc2be7e40",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "wan",
+      "mode": "clean",
+      "generated_video_sha256": "e609f694926c33b6caddf914f05c6740f8c0774499a81b999fb0c20fc2be7e40",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/wan_clean",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0/video.mp4",
+      "original_historical_sha256": "e609f694926c33b6caddf914f05c6740f8c0774499a81b999fb0c20fc2be7e40",
+      "original_historical_bytes_equal": true
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/wan_noisy.mp4",
+      "reference_sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "wan",
+      "mode": "noisy",
+      "generated_video_sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/wan_noisy_retry2",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70/noise/wan/results/v2v_gap_038__N75__seed42__noise0.75/video.mp4",
+      "original_historical_sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "original_historical_bytes_equal": true
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/wan_equal_sigma.mp4",
+      "reference_sha256": "230facf4ff79846fd1300323b9315addcddf0bc29732ad41e8302bd358ee4830",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "wan",
+      "mode": "equal_sigma",
+      "generated_video_sha256": "230facf4ff79846fd1300323b9315addcddf0bc29732ad41e8302bd358ee4830",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/wan_equal_sigma"
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/nano_clean.mp4",
+      "reference_sha256": "3eac6d76c7181429ceca4db1c69cadea116aacbaf50fd53961a99defb75ba807",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "nano",
+      "mode": "clean",
+      "generated_video_sha256": "3eac6d76c7181429ceca4db1c69cadea116aacbaf50fd53961a99defb75ba807",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/nano_clean",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1500/clean/results/v2v_gap_038/video.mp4",
+      "original_historical_sha256": "3eac6d76c7181429ceca4db1c69cadea116aacbaf50fd53961a99defb75ba807",
+      "original_historical_bytes_equal": true
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/nano_noisy.mp4",
+      "reference_sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "nano",
+      "mode": "noisy",
+      "generated_video_sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/nano_noisy",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/noise/nano_20cases/step1500/matched/results/v2v_gap_038/video.mp4",
+      "original_historical_sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "original_historical_bytes_equal": true
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/nano_equal_sigma.mp4",
+      "reference_sha256": "b461b27ee8fa74d491d9e0d47dfa68239dd897c990fa8d5289073707f2dae390",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT",
+      "backbone": "nano",
+      "mode": "equal_sigma",
+      "generated_video_sha256": "b461b27ee8fa74d491d9e0d47dfa68239dd897c990fa8d5289073707f2dae390",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/nano_equal_sigma"
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/predict25_clean.mp4",
+      "reference_sha256": "09f164510a63ed76da99731c48dbc84359f4f1f7490c36c2a2bda2c6fa289c0e",
+      "video_bytes_equal": false,
+      "decoded_pixels_equal": false,
+      "frames": 49,
+      "mse": 2.2861682235673286,
+      "max_abs": 54,
+      "psnr_db": 44.53972176856325,
+      "status": "DIFFERENT_REQUIRES_REVIEW",
+      "backbone": "predict25",
+      "mode": "clean",
+      "generated_video_sha256": "780e9ec37f0d392c39852305e038be09757354985312e2223769dc90bf2aa339",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/predict25_clean",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1500/clean/results/v2v_gap_038/video.mp4",
+      "original_historical_sha256": "780e9ec37f0d392c39852305e038be09757354985312e2223769dc90bf2aa339",
+      "original_historical_bytes_equal": true,
+      "pairing_checks": {
+        "clean_context_sha256": true,
+        "context_noise_sha256": true,
+        "future_initial_sha256": true,
+        "all_context_trace_equal": true
+      }
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/predict25_noisy.mp4",
+      "reference_sha256": "0ad2d627e78ad8b967b25cb67bb5a8adbc022b8beb5cbe1b446786942758e9f7",
+      "video_bytes_equal": false,
+      "decoded_pixels_equal": false,
+      "frames": 49,
+      "mse": 3.5031440223271226,
+      "max_abs": 53,
+      "psnr_db": 42.6862236833578,
+      "status": "DIFFERENT_REQUIRES_REVIEW",
+      "backbone": "predict25",
+      "mode": "noisy",
+      "generated_video_sha256": "3e7d788d1276b181e79eaab8b1ab57a598863b380cdde5b09cd2c54b109b12c8",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/predict25_noisy",
+      "original_historical_reference": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict25/N75/step1500/matched/results/v2v_gap_038/video.mp4",
+      "original_historical_sha256": "5c9f05e11c85d2d72f8b958d588a10fe89805dd7f6fde03075576d3deb69fedb",
+      "original_historical_bytes_equal": false,
+      "pairing_checks": {
+        "clean_context_sha256": true,
+        "context_noise_sha256": true,
+        "future_initial_sha256": true,
+        "all_context_trace_equal": true
+      }
+    },
+    {
+      "reference": "/data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038/predict25_equal_sigma.mp4",
+      "reference_sha256": "4e3a52060875a22c038e6faa70093c31f0c1c1d177eac269357e2925c8f5f926",
+      "video_bytes_equal": false,
+      "decoded_pixels_equal": false,
+      "frames": 49,
+      "mse": 3.645896177597713,
+      "max_abs": 83,
+      "psnr_db": 42.51276063564422,
+      "status": "DIFFERENT_REQUIRES_REVIEW",
+      "backbone": "predict25",
+      "mode": "equal_sigma",
+      "generated_video_sha256": "a55f46b553b306bd43406adb5f6380b7a1d4f9d2fb4444cb786ff79c6b6a8d50",
+      "run_directory": "/data/gaoya/agent-data/outputs/single_case_20261010/predict25_equal_sigma",
+      "pairing_checks": {
+        "clean_context_sha256": true,
+        "context_noise_sha256": true,
+        "future_initial_sha256": true,
+        "all_context_trace_equal": true
+      }
+    }
+  ],
+  "source_hashes": {
+    "sampling.py": "f89c5f3cff2daf25df7f87c207ac194fa977b461526e87b48183615fd69b178d",
+    "test_contracts.py": "ef54d3858acfc05214b45ffeab81e3bc834448a15a35733d6dae05d5cef8ba6a",
+    "common.py": "ea29c0aa64838e633894bbf808f9ba6182dcaea88c48394a6ff867d3cee6a099",
+    "dependency_manifest.json": "1e957e8f8b7ef79821dde11bb9456de6865fc86b7ee9c99f93750bc79f41950b",
+    "verify_matrix.py": "e413d24cd6f61779b1ac32b8d452ba13c0e99a11f540d6df8243c20481ccea40",
+    "nano.py": "54970b8eff6694513840b001290481829ff5d4055d5b41a391cf815a32ffa25a",
+    "wan.py": "da844f0837c05e5ef990a838ee42295cdcfd5f28584f805b48af4d189a3e2d88",
+    "predict25.py": "d3daacd9d103b5ed18dadf78ab855a558dc2a582dd0cf5a9f0cfb09f300cb235",
+    "diagnostics/predict_original_latent_control.py": "a75e0a3702a0e0bb60f9435840cfbcaf0124581bedbcc8c9e32816b4be2990ae",
+    "diagnostics/predict_decode_probe.py": "af947a95841124da24d0f0c27abf31a47e892a83a577f4bf1fe152fb0575c789",
+    "presets/nano_gap038.json": "d5dbb4920695b59b8fe3c42c10446ac1487a4f4aaa9a26d9b43f68939a3a0ae7",
+    "presets/predict25_gap038.json": "c6b3ee5547688f5afee39ab35d0c96e9960ba507cff418cd19a4ee31ebb81357",
+    "presets/wan_gap038.json": "4341baf4e72eb6d067aba1546488f58454bc4d0e53a22b9d1b4c9837a5929578"
+  },
+  "predict25_decode_probe": [
+    {
+      "label": "historical_1",
+      "decoded_sha256": "256c5eda53b9c8ee6f45d35928f40a4c315d92ee5c4db099bb9b1fe36cf8a978",
+      "equals_original": false
+    },
+    {
+      "label": "historical_2",
+      "decoded_sha256": "256c5eda53b9c8ee6f45d35928f40a4c315d92ee5c4db099bb9b1fe36cf8a978",
+      "equals_original": false,
+      "max_abs": 0.0,
+      "mse": 0.0
+    },
+    {
+      "label": "deterministic",
+      "decoded_sha256": "12409dd67964ec7def2a65c001d16f05bf3acaca854ec8622f9a55ba3a8947b0",
+      "equals_original": false,
+      "max_abs": 0.015625,
+      "mse": 8.235155632974056e-07
+    }
+  ],
+  "predict25_original_noisy_control": {
+    "latent_equal": true,
+    "latent_shape": [
+      1,
+      16,
+      13,
+      64,
+      112
+    ],
+    "latent_dtype": "torch.float32",
+    "latent_max_abs": 0.0,
+    "single_case_latent_sha256": "dd53f0ef3d64d532b34e9e7431be775387acb412ae2521836bec7b17ebb11f80",
+    "original_entry_latent_sha256": "dd53f0ef3d64d532b34e9e7431be775387acb412ae2521836bec7b17ebb11f80",
+    "original_entry_video_sha256": "0ad2d627e78ad8b967b25cb67bb5a8adbc022b8beb5cbe1b446786942758e9f7",
+    "single_case_video_sha256": "3e7d788d1276b181e79eaab8b1ab57a598863b380cdde5b09cd2c54b109b12c8",
+    "video_bytes_equal": false,
+    "decoder_tensor_equal": false
+  },
+  "conclusion": "All nine generated. Six Wan/Nano outputs reproduce published demo bytes. Predict2.5 outputs do not all reproduce published video bytes; noisy control has byte-identical final latent to original entry but different decoder output. Exact old decoder algorithm state is not recorded; no all-nine guarantee.",
+  "failed_attempts": [
+    {
+      "run": "wan_noisy",
+      "reason": "Other GPU process occupied memory; failed during model loading before sampling"
+    },
+    {
+      "run": "wan_noisy_retry",
+      "reason": "Other GPU process occupied memory; failed during model loading before sampling"
+    }
+  ],
+  "predict25_decode_probe_videos": {
+    "decode_historical_1.mp4": "c2314896e67cbe79fd00f3da1965daec00963551c603870d70791f0c4030b317",
+    "decode_historical_2.mp4": "c2314896e67cbe79fd00f3da1965daec00963551c603870d70791f0c4030b317",
+    "decode_deterministic.mp4": "7b0ea60fe531a8c908f660efb4d6b1225b56369146e05d0ca048fa8f75397697"
+  }
+}

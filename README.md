@@ -8,6 +8,7 @@
 
 | 内容 | 入口 |
 |---|---|
+| 单视频 + prompt 推理入口及9组验证 | [single_case/README.md](scripts_mytrain/inference/single_case/README.md) |
 | 训练入口、源码版本证据与启动命令 | [training/README.md](training/README.md) |
 | 六个历史推理入口、依赖与复现命令 | [historical/README.md](scripts_mytrain/inference/historical/README.md) |
 | Context / future 同等级加噪实验 | [equal_sigma/README.md](scripts_mytrain/inference/equal_sigma/README.md) |
@@ -39,6 +40,19 @@ python3 -m http.server 8845 --bind 0.0.0.0 --directory demos/gap038
 ```bash
 python3 -m http.server 8845 --bind 0.0.0.0 --directory /data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038
 ```
+
+## 单 case 推理
+
+新增三个直接处理单个视频的入口：[wan.py](scripts_mytrain/inference/single_case/wan.py)、[nano.py](scripts_mytrain/inference/single_case/nano.py)、[predict25.py](scripts_mytrain/inference/single_case/predict25.py)。每个入口支持 `--video`、`--prompt`、`--adapter`、`--mode clean|noisy|equal_sigma`、`--output`，不要求历史 `result.json` 或批量case清单。默认gap038配置及依赖路径位于 `single_case/presets/`。
+
+```bash
+/data/gaoya/agent-data/envs/cosmos_nano_acn75/bin/python scripts_mytrain/inference/single_case/nano.py \
+  --mode noisy --gpu 3 --output /data/gaoya/agent-data/outputs/single_case_demo/nano
+```
+
+本次9组全部运行：Wan/Nano六组对已有demo逐字节通过；Predict2.5三组仍有像素差异，不能宣称全部严格复现。Predict2.5 clean本次输出与最初历史视频一致，但与已上传复跑demo不同；报告区分这两套参考。
+
+原模型工程、权重和部分历史输入缓存仍是外部依赖。新视频/新prompt自动去掉默认旧case缓存。生成后可用 `--verify-against` 比较参考MP4，非逐字节一致返回退出码2；[verify_matrix.py](scripts_mytrain/inference/single_case/verify_matrix.py) 可顺序跑完9组。详细参数和运行命令见 [单case说明](scripts_mytrain/inference/single_case/README.md)，实测结果见 [verification.json](scripts_mytrain/inference/single_case/verification.json)。
 
 ## 推理代码与加噪方式
 

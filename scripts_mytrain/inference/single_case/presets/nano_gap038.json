@@ -1,0 +1,21 @@
+{
+  "video": "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/data/gaoya/ckpt/nvidia-Cosmos3-Nano",
+  "adapter": "/data/gaoya/agent-data/outputs_v1/cosmos_nano/20260930_lora32_wandb_3000/N75/step-001500",
+  "seed": 42,
+  "steps": 40,
+  "fps": 30,
+  "guidance": 6.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "training_shift": 5.0,
+  "training_timesteps": 1000,
+  "flow_shift": 10.0,
+  "negative_prompt": "{\"description\":\"blurry, low quality, distorted, flickering, inconsistent object identity, extra objects, text, watermark\"}",
+  "backbone": "nano",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "noisy"
+}

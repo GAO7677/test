@@ -1,0 +1,34 @@
+[
+  {
+    "file": "../historical/frozen/wan/infer_full_sa_lora_json_list.py",
+    "sha256": "888c470af7e12d56328c7020691aad50ebdcbba145ca85dccdd04d55c44ce6b1"
+  },
+  {
+    "file": "../historical/frozen/nano/v2/common.py",
+    "sha256": "4bb6a414737717a97eb36ae14d0a6b4321236a557ecb4cb96e8733e623e81c77"
+  },
+  {
+    "file": "../historical/frozen/nano/run_matched.py",
+    "sha256": "9d2c7353b37a1a7153c265ad911c21987a5885657b2dfaa7c8eb3d895e808eae"
+  },
+  {
+    "file": "../historical/frozen/predict25/inference_runtime.py",
+    "sha256": "701a315bdfdb3d2befb2d3fc65707a1fddaeea15ff76c99fd2c12c604e833963"
+  },
+  {
+    "file": "../historical/frozen/predict25/inference_io.py",
+    "sha256": "a8344b6dd204d25786319a9495540ccd1e64a090fd88629ae500166d80e1f80d"
+  },
+  {
+    "file": "../historical/frozen/predict25/model.py",
+    "sha256": "dcbeb3b74778a1bc402068247cb3b6a0597de2e3c59ea1ddccbd40cb948c39b1"
+  },
+  {
+    "file": "../historical/frozen/predict25/text.py",
+    "sha256": "a3283d2638be964bf55cbf4afd9ca4ea990e2f4271d6c7b9ad0af03a87e2e592"
+  },
+  {
+    "file": "../historical/frozen/predict25/mechanism.py",
+    "sha256": "66dbbca0e294902565c67f3e9665368fe4c69d25eaeaa1ae3484e74260331721"
+  }
+]

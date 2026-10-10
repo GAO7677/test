@@ -1,0 +1,50 @@
+{
+  "video": "/data/gaoya/AAA_test_video/physv_v2v_0819/samples/v2v_gap_038/context/context8_cycles.mp4",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5",
+  "adapter": "/data/gaoya/agent-data/outputs_v1/cosmos_predict25/20261004_n75_mb4_localweights/physrvg-full-sa/predict25-official-posttrained-acn75/train_N75_mb4/adapters/step001500",
+  "seed": 0,
+  "steps": 35,
+  "fps": 30,
+  "guidance": 7.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "negative_prompt": "The video captures a series of frames showing ugly scenes, static with no motion, motion blur, over-saturation, shaky footage, low resolution, grainy texture, pixelated images, poorly lit areas, underexposed and overexposed scenes, poor color balance, washed out colors, choppy sequences, jerky movements, low frame rate, artifacting, color banding, unnatural transitions, outdated special effects, fake elements, unconvincing visuals, poorly edited content, jump cuts, visual noise, and flickering. Overall, the video is of poor quality.",
+  "settings": {
+    "assets": {
+      "native_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/base/post-trained/81edfebe-bd6a-4039-8c1d-737df1a790bf_ema_bf16.pt",
+      "native_checkpoint_sha256": "565bbb2c9645737327983f4461e4d32627bba465b0a8dc26447edea144e1ff47",
+      "vae_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/tokenizer.pth",
+      "vae_checkpoint_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "text_weights": "/data/gaoya/ckpt/Cosmos-Reason1-7B"
+    },
+    "input": {
+      "context_rgb_frames": 8,
+      "context_latents": 2,
+      "policy": "encode_prefix8_then_take_first2_latents"
+    },
+    "output": {
+      "height": 512,
+      "width": 896,
+      "frames": 49
+    }
+  },
+  "training": {
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "lora_target_modules": "q_proj,k_proj,v_proj,output_proj,mlp.layer1,mlp.layer2",
+    "shift": 5,
+    "context_noise_grid": {
+      "size": 1000,
+      "unshifted_max": 1.0,
+      "unshifted_min": 0.001,
+      "nearest": true
+    }
+  },
+  "context_cache": "/data/gaoya/AAA_test_video/Context_Video_bench/Shared/supplement/gap038_triplet/predict_shared_context.pt",
+  "backbone": "predict25",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "noisy"
+}

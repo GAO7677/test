@@ -12,3 +12,6 @@ __pycache__/
 *.log
 outputs/
 checkpoints/
+
+# Published inference demos only
+!/demos/gap038/*.mp4

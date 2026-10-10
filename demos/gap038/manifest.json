@@ -1,0 +1,77 @@
+{
+  "description": "Unmodified MP4 outputs of the six organized historical inference entries; no re-encoding.",
+  "videos": [
+    {
+      "entry": "scripts_mytrain/inference/historical/wan_clean.py",
+      "video": "demos/gap038/wan_clean.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1000,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "e609f694926c33b6caddf914f05c6740f8c0774499a81b999fb0c20fc2be7e40",
+      "bytes": 542045,
+      "historical_video_sha256": "e609f694926c33b6caddf914f05c6740f8c0774499a81b999fb0c20fc2be7e40",
+      "historical_video_bytes_equal": true,
+      "reproduction_status": "BYTE_EXACT"
+    },
+    {
+      "entry": "scripts_mytrain/inference/historical/wan_noisy.py",
+      "video": "demos/gap038/wan_noisy.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1000,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "bytes": 607249,
+      "historical_video_sha256": "e92e4bbefc7a10f55ae1f07e148077f8232621d803c535ef8d56493c1368aaa7",
+      "historical_video_bytes_equal": true,
+      "reproduction_status": "BYTE_EXACT"
+    },
+    {
+      "entry": "scripts_mytrain/inference/historical/nano_clean.py",
+      "video": "demos/gap038/nano_clean.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "3eac6d76c7181429ceca4db1c69cadea116aacbaf50fd53961a99defb75ba807",
+      "bytes": 63078,
+      "historical_video_sha256": "3eac6d76c7181429ceca4db1c69cadea116aacbaf50fd53961a99defb75ba807",
+      "historical_video_bytes_equal": true,
+      "reproduction_status": "BYTE_EXACT"
+    },
+    {
+      "entry": "scripts_mytrain/inference/historical/nano_noisy.py",
+      "video": "demos/gap038/nano_noisy.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "bytes": 88803,
+      "historical_video_sha256": "2e233dffd7ccb8ecbe5812a2ea18864327a3523224064bceaf7788a650c576ac",
+      "historical_video_bytes_equal": true,
+      "reproduction_status": "BYTE_EXACT"
+    },
+    {
+      "entry": "scripts_mytrain/inference/historical/predict25_clean.py",
+      "video": "demos/gap038/predict25_clean.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "09f164510a63ed76da99731c48dbc84359f4f1f7490c36c2a2bda2c6fa289c0e",
+      "bytes": 39122,
+      "historical_video_sha256": "780e9ec37f0d392c39852305e038be09757354985312e2223769dc90bf2aa339",
+      "historical_video_bytes_equal": false,
+      "reproduction_status": "DIFFERENT_REQUIRES_REVIEW"
+    },
+    {
+      "entry": "scripts_mytrain/inference/historical/predict25_noisy.py",
+      "video": "demos/gap038/predict25_noisy.mp4",
+      "case": "v2v_gap_038",
+      "checkpoint_step": 1500,
+      "source": "organized_entry_replay_20261010",
+      "sha256": "0ad2d627e78ad8b967b25cb67bb5a8adbc022b8beb5cbe1b446786942758e9f7",
+      "bytes": 48474,
+      "historical_video_sha256": "5c9f05e11c85d2d72f8b958d588a10fe89805dd7f6fde03075576d3deb69fedb",
+      "historical_video_bytes_equal": false,
+      "reproduction_status": "DIFFERENT_REQUIRES_REVIEW"
+    }
+  ]
+}

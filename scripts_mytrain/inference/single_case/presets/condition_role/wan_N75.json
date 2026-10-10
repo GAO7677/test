@@ -1,0 +1,22 @@
+{
+  "video": "/path/to/video",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/path/to/model_path",
+  "adapter": "/path/to/adapter",
+  "physrvg_dit_checkpoint": "/path/to/physrvg_dit_checkpoint",
+  "seed": 42,
+  "steps": 40,
+  "fps": 30,
+  "guidance": 5.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "training_timesteps": 1000,
+  "cache_video_sha256": "90be8c44e5d2c4d87228087a2719102e5c6ec3b6a17c2793ce950916484b5af2",
+  "cache_prompt": "A ball is moving across a raised platform.",
+  "backbone": "wan",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "noisy",
+  "training_group": "N75"
+}

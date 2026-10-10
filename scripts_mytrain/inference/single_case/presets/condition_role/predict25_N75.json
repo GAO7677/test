@@ -1,0 +1,50 @@
+{
+  "video": "/path/to/video",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/path/to/model_path",
+  "adapter": "/path/to/adapter",
+  "seed": 0,
+  "steps": 35,
+  "fps": 30,
+  "guidance": 7.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "negative_prompt": "The video captures a series of frames showing ugly scenes, static with no motion, motion blur, over-saturation, shaky footage, low resolution, grainy texture, pixelated images, poorly lit areas, underexposed and overexposed scenes, poor color balance, washed out colors, choppy sequences, jerky movements, low frame rate, artifacting, color banding, unnatural transitions, outdated special effects, fake elements, unconvincing visuals, poorly edited content, jump cuts, visual noise, and flickering. Overall, the video is of poor quality.",
+  "settings": {
+    "assets": {
+      "native_checkpoint": "/path/to/native_checkpoint",
+      "native_checkpoint_sha256": "565bbb2c9645737327983f4461e4d32627bba465b0a8dc26447edea144e1ff47",
+      "vae_checkpoint": "/path/to/vae_checkpoint",
+      "vae_checkpoint_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "text_weights": "/path/to/text_weights"
+    },
+    "input": {
+      "context_rgb_frames": 8,
+      "context_latents": 2,
+      "policy": "encode_prefix8_then_take_first2_latents"
+    },
+    "output": {
+      "height": 512,
+      "width": 896,
+      "frames": 49
+    }
+  },
+  "training": {
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "lora_target_modules": "q_proj,k_proj,v_proj,output_proj,mlp.layer1,mlp.layer2",
+    "shift": 5,
+    "context_noise_grid": {
+      "size": 1000,
+      "unshifted_max": 1.0,
+      "unshifted_min": 0.001,
+      "nearest": true
+    }
+  },
+  "backbone": "predict25",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "noisy",
+  "training_group": "N75"
+}

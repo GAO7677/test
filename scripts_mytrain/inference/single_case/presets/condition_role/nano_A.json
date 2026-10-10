@@ -1,0 +1,22 @@
+{
+  "video": "/path/to/video",
+  "prompt": "A ball is moving across a raised platform.",
+  "model_path": "/path/to/model_path",
+  "adapter": "/path/to/adapter",
+  "seed": 42,
+  "steps": 40,
+  "fps": 30,
+  "guidance": 6.0,
+  "context_seed": 20261007,
+  "context_scale": 0.75,
+  "training_shift": 5.0,
+  "training_timesteps": 1000,
+  "flow_shift": 10.0,
+  "negative_prompt": "{\"description\":\"blurry, low quality, distorted, flickering, inconsistent object identity, extra objects, text, watermark\"}",
+  "backbone": "nano",
+  "height": 512,
+  "width": 896,
+  "frames": 49,
+  "mode": "equal_sigma",
+  "training_group": "A"
+}

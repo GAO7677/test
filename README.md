@@ -1,5 +1,7 @@
 # 视频 Context 加噪：训练、推理与 Demo
 
+新增：[首步 clean → 重建／自由演化 · 全程条件角色：代码、配置及10组验证](scripts_mytrain/inference/single_case/CONDITION_ROLE.md)。
+
 本仓库整理 **Wan、Cosmos3-Nano、Cosmos-Predict2.5** 的训练代码来源、历史 clean / noisy 推理，以及 context 与 future 同等级加噪的推理对照。当前提供 `v2v_gap_038` 样本的 **9 个实际生成视频**、对应代码和逐步噪声记录。
 
 同一 backbone 的三个推理版本共用同一份 **N75 训练权重**。`clean` 指推理时使用干净 context，不代表使用了 clean 训练权重；`equal_sigma` 是推理对照，没有重新训练。

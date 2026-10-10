@@ -1,5 +1,7 @@
 # 单 case 推理
 
+新增：[首步 clean → 重建／自由演化 · 全程条件角色：代码、配置及10组验证](CONDITION_ROLE.md)。
+
 三个入口：[wan.py](wan.py)、[nano.py](nano.py)、[predict25.py](predict25.py)。每次处理一个视频与一条 prompt，支持 `--mode clean|noisy|equal_sigma`，直接输出 `video.mp4`、`config.json`、`result.json`。不读取历史 result.json 或批量任务清单；验证参考视频只在生成结束后用于比较，不作为模型输入。
 
 ## 本次9组实测结果

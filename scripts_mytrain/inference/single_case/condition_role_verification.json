@@ -1,0 +1,153 @@
+{
+  "note": "Historical completed runs; machine paths, execution commands, GPU placement and timestamps omitted. Config paths are placeholders. Publication does not rerun GPU inference or establish cross-environment byte equality.",
+  "scripts_sha256": {
+    "condition_role_case.py": "396b5cecc58806d7a2bcb6ff303514474b745f6c32ad908a718f2e938fc1fec5",
+    "clean_first_hooks.py": "ec0ee3de3301bba6f7100e194c659e1d89e64d0101ad2882c39f5ccf2783c9a0",
+    "initial_only_hooks.py": "cc75f77e23cb6d7273c427ebb36357afd8698bc92c8ebcd6089db1187895791b",
+    "test_condition_role.py": "643c81ee86cb2a0572e3e3ab6a29aec2dccd418503f4499362709a6ea657887d",
+    "test_clean_first.py": "b759af8f682a63f43c6e705cb07c10be9aa59a2db1dfe37977c243e44923b045",
+    "test_initial_only.py": "bb76532303696d8ea8b7d02794e41c6702528bae5bcdc63a833b844b1d91abc4"
+  },
+  "runs": [
+    {
+      "name": "wan_A_clean_rebuild_condition",
+      "backbone": "wan",
+      "group": "A",
+      "protocol": "clean_rebuild",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "f2408a6a6f03b65d1d72ed2fd8ff471a9e581316d43638d1ad9273e16affc646"
+      }
+    },
+    {
+      "name": "wan_A_clean_free_condition",
+      "backbone": "wan",
+      "group": "A",
+      "protocol": "clean_free",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "2b96f46c62e06f3fecf4ed16e67d5c8c2eaf373f68fa81bee897cceda31b21ac"
+      }
+    },
+    {
+      "name": "nano_A_clean_rebuild_condition",
+      "backbone": "nano",
+      "group": "A",
+      "protocol": "clean_rebuild",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "aa587e17d0802e4dde70cbbbfe094be606cd6800c588888bc1e6d3b1ea40a1d8"
+      }
+    },
+    {
+      "name": "nano_A_clean_free_condition",
+      "backbone": "nano",
+      "group": "A",
+      "protocol": "clean_free",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "863d0804a8fc5d6dbb65901c2bd4ae21ff8befbdf7f9fcfb5bfc814ec4cd9793"
+      }
+    },
+    {
+      "name": "predict25_N75_clean_rebuild_condition",
+      "backbone": "predict25",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 36,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "719982c67c3aae04d2b05d5cc9d3799a554ad0d684a66727238c28de85735427"
+      }
+    },
+    {
+      "name": "predict25_N75_clean_free_condition",
+      "backbone": "predict25",
+      "group": "N75",
+      "protocol": "clean_free",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 36,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "18f060aac94d9a8acf2af74d8f366063da82389ac307a938dc2043dfcb30c579"
+      }
+    },
+    {
+      "name": "wan_N75_clean_rebuild_condition",
+      "backbone": "wan",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "039ba96c783e5242db933768c239406d8294c428673176e4737c9636efb041c4"
+      }
+    },
+    {
+      "name": "wan_N75_clean_free_condition",
+      "backbone": "wan",
+      "group": "N75",
+      "protocol": "clean_free",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "d86a71221205057a5b0c36ac2465ac8b5ecfabbe51620734855fdb59dad250bc"
+      }
+    },
+    {
+      "name": "nano_N75_clean_rebuild_condition",
+      "backbone": "nano",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "6d7bf532264250989b2b9cbc65a059b83fbdcad1d7f8e726f3beb29a2da58193"
+      }
+    },
+    {
+      "name": "nano_N75_clean_free_condition",
+      "backbone": "nano",
+      "group": "N75",
+      "protocol": "clean_free",
+      "status": "COMPLETE",
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "ca6ebca2cb0adf79d7cccd8568b2441fb05e1583bc2339160f82264c399d96e4"
+      }
+    }
+  ]
+}

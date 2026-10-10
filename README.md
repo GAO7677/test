@@ -1,21 +1,113 @@
-# Historical Context Noise Inference
+# 视频 Context 加噪：训练、推理与 Demo
 
-Wan、Cosmos3-Nano、Cosmos-Predict2.5 的历史 clean / context 加噪推理代码，共六个入口。
+本仓库整理 **Wan、Cosmos3-Nano、Cosmos-Predict2.5** 的训练代码来源、历史 clean / noisy 推理，以及 context 与 future 同等级加噪的推理对照。当前提供 `v2v_gap_038` 样本的 **9 个实际生成视频**、对应代码和逐步噪声记录。
 
-[完整使用说明与复现命令](scripts_mytrain/inference/historical/README.md) · [六个推理 Demo 视频](demos/gap038/README.md)
+同一 backbone 的三个推理版本共用同一份 **N75 训练权重**。`clean` 指推理时使用干净 context，不代表使用了 clean 训练权重；`equal_sigma` 是推理对照，没有重新训练。
 
-| Backbone | Clean | Context noise |
+## 快速导航
+
+| 内容 | 入口 |
+|---|---|
+| 训练入口、源码版本证据与启动命令 | [training/README.md](training/README.md) |
+| 六个历史推理入口、依赖与复现命令 | [historical/README.md](scripts_mytrain/inference/historical/README.md) |
+| Context / future 同等级加噪实验 | [equal_sigma/README.md](scripts_mytrain/inference/equal_sigma/README.md) |
+| 9 个视频与来源说明 | [demos/gap038/README.md](demos/gap038/README.md) |
+| 支持联动播放的对比页 | [comparison.html](demos/gap038/comparison.html)，需通过下方 HTTP 服务打开 |
+
+## 视频对比
+
+| Backbone | 权重 | Clean | 原 noisy | 同等级 noisy |
+|---|---|---|---|---|
+| Wan | N75 step1000 | [视频](demos/gap038/wan_clean.mp4) | [视频](demos/gap038/wan_noisy.mp4) | [视频](demos/gap038/wan_equal_sigma.mp4) |
+| Cosmos3-Nano | N75 step1500 | [视频](demos/gap038/nano_clean.mp4) | [视频](demos/gap038/nano_noisy.mp4) | [视频](demos/gap038/nano_equal_sigma.mp4) |
+| Cosmos-Predict2.5 | N75 step1500 | [视频](demos/gap038/predict25_clean.mp4) | [视频](demos/gap038/predict25_noisy.mp4) | [视频](demos/gap038/predict25_equal_sigma.mp4) |
+
+视频保留实际推理输出的原始 MP4 字节，未重新编码。每行内的对照保持相同输入、权重和随机种子。Wan 使用旧 Test70，Nano 使用 Test70_v2，Predict2.5 使用旧 Test70 triplet，**跨行输入并不完全相同**，应优先比较同一行。
+
+### 本地可视化
+
+在仓库根目录以前台方式启动：
+
+```bash
+python3 -m http.server 8845 --bind 0.0.0.0 --directory demos/gap038
+```
+
+打开 [http://localhost:8845/comparison.html](http://localhost:8845/comparison.html)。页面支持每行联动播放、全部播放/暂停、调速和查看逐步 sigma / timestep。
+
+原实验服务器的服务地址为 [http://10.176.42.45:8845/comparison.html](http://10.176.42.45:8845/comparison.html)，需要网络可达且服务仍在运行。该服务器的前台重启命令是：
+
+```bash
+python3 -m http.server 8845 --bind 0.0.0.0 --directory /data/gaoya/agent-data/outputs/github-context-inference-20261010-efc_zrlo/demos/gap038
+```
+
+## 推理代码与加噪方式
+
+| Backbone | Clean 入口 | Noisy 入口 | 本次 noisy demo 实际核心 |
+|---|---|---|---|
+| Wan | [wan_clean.py](scripts_mytrain/inference/historical/wan_clean.py) | [wan_noisy.py](scripts_mytrain/inference/historical/wan_noisy.py) | `ContextNoise`、`sample` |
+| Cosmos3-Nano | [nano_clean.py](scripts_mytrain/inference/historical/nano_clean.py) | [nano_noisy.py](scripts_mytrain/inference/historical/nano_noisy.py) | [frozen/nano/v2/hooks.py](scripts_mytrain/inference/historical/frozen/nano/v2/hooks.py) 中的 `NanoContext` |
+| Cosmos-Predict2.5 | [predict25_clean.py](scripts_mytrain/inference/historical/predict25_clean.py) | [predict25_noisy.py](scripts_mytrain/inference/historical/predict25_noisy.py) | `install_predict` 中的 `denoise` |
+
+入口由 [reproduce.py](scripts_mytrain/inference/historical/reproduce.py) 根据历史记录恢复配置并选择冻结实现，不能仅复制一个入口文件运行。
+
+对原 noisy demo，每次模型调用前从干净 context latent `c` 重建输入：
+
+```text
+sigma_c = nearest_training_sigma(0.75 * sigma_f)
+context_input = (1 - sigma_c) * c + sigma_c * epsilon_c
+```
+
+`epsilon_c` 在整段推理中固定，变化的是 `sigma_c`；future 沿原生 scheduler 迭代去噪。Wan 从完整初始噪声取 context 切片；Nano 和 Predict2.5 使用独立 FP32 context 噪声，seed 为 20261007。
+
+同等级实验使用独立入口 [equal_sigma/run.py](scripts_mytrain/inference/equal_sigma/run.py)：
+
+```text
+sigma_c = sigma_f
+timestep_c = timestep_f
+context_input = (1 - sigma_c) * c + sigma_c * epsilon_c
+```
+
+此处直接使用当前 future sigma / timestep，不做训练网格量化；context 噪声来源、条件 mask、CFG 和原生采样器保持原 noisy 实现。它不是每步重新抽噪声，也不包含 RePaint、回跳或提前 n 步变体。
+
+| Backbone | 本次采样记录 | 原 noisy 的 context 设置 |
 |---|---|---|
-| Wan | [wan_clean.py](scripts_mytrain/inference/historical/wan_clean.py) | [wan_noisy.py](scripts_mytrain/inference/historical/wan_noisy.py) |
-| Cosmos3-Nano | [nano_clean.py](scripts_mytrain/inference/historical/nano_clean.py) | [nano_noisy.py](scripts_mytrain/inference/historical/nano_noisy.py) |
-| Cosmos-Predict2.5 | [predict25_clean.py](scripts_mytrain/inference/historical/predict25_clean.py) | [predict25_noisy.py](scripts_mytrain/inference/historical/predict25_noisy.py) |
+| Wan | 40 步，seed42，CFG 关闭 | 保留原 mask，替换输入和 token timestep；scheduler 只更新 future，再拼回 clean context |
+| Nano | 40 步，seed42，CFG=6 | context 改为 noisy token role；scheduler 更新后恢复 clean context |
+| Predict2.5 | 配置35步，实际36个 timestep / 72次 CFG 调用，seed0，CFG=7 | 条件输入 mask 置零；直接调用 net，再用解析 context 速度保留原生轨迹 |
 
-本仓库包含推理源码、冻结辅助代码、配置、验证记录及推理 demo 视频，不包含权重、完整数据集或完整 backbone 工程。复现依赖原模型工程、Python 环境及外部资产；配置保留原实验的绝对路径，需要在具有这些依赖的环境运行。六个入口共享辅助代码，不能单独复制一个文件运行。
+同等级实验逐步记录：[Wan](demos/gap038/wan_equal_sigma_trace.json) · [Nano](demos/gap038/nano_equal_sigma_trace.json) · [Predict2.5](demos/gap038/predict25_equal_sigma_trace.json)。记录中的 `step` 从0开始，描述模型调用时的等级，不包含最后一次 scheduler 更新后的终点。
 
-验证状态：Wan、Nano 的 clean / noisy 各一例共四个视频逐字节复现；Predict2.5 输入和完整 context / timestep 审计一致，但两个视频尚未逐字节复现，原始未拆分脚本对照也存在差异。详见 [验证记录](scripts_mytrain/inference/historical/verification.json)。
+## 训练代码来源
 
-不包含后续 RePaint、回跳或提前 n 步变体。保留源文件中的既有版权与许可声明；上游模型和依赖遵循各自的许可。
+| Backbone | 入口与训练核心 | 来源核查 |
+|---|---|---|
+| Wan | [RL-LoRA raw 入口](training/wan/workspace/scripts_mytrain/train/train_full_sa_pybullet_rl_lora_raw.py) → [训练核心](training/wan/workspace/scripts_mytrain/train/train_full_sa_pybullet_aux.py) | 训练记录确认入口和 argv；未找到训练当日完整源码快照，所附源码为对应工作区当前版本 |
+| Nano | [train.py](training/nano/source/train.py)、[common.py](training/nano/source/common.py) | 训练运行目录快照，13个文件全部与原始哈希记录一致 |
+| Predict2.5 | [官方入口](training/predict25/native/scripts/train.py)、[N75 配置](training/predict25/projects/generic_acn75/n75_mb4_config.py)、[model.py](training/predict25/projects/generic_acn75/model.py) | 自定义代码来自运行目录快照；所附原生核心与训练记录的 Git commit 一致 |
 
-新增 [context / future 同等级推理实验](scripts_mytrain/inference/equal_sigma/README.md)：三个新视频及 [九视频对比页](demos/gap038/comparison.html)，独立于原六个历史入口。对比页需通过本地 HTTP 服务打开，启动命令见实验说明。
+完整配置、启动命令和版本证据见 [训练说明](training/README.md) 与 [训练源文件清单](training/source_manifest.json)。此次整理没有重跑训练；源码归档不等于从头训练复现已通过。
 
-[Demo 权重对应的实际训练入口、源码快照和配置](training/README.md)：Wan N75 step1000、Nano/Predict2.5 N75 step1500。Wan 完整训练当日源码版本尚无法确认；证据范围见训练说明。
+## 运行条件与验证范围
+
+仓库包含代码、配置、验证记录和 demo 视频，**不包含权重、数据集、训练缓存或完整 backbone 工程**。配置保留原实验绝对路径；运行推理/训练需要原模型工程、对应 Python 环境和外部资产。查看视频只需要 Python HTTP 服务和浏览器。
+
+在原始 PhysRVG 工作区可先做历史入口预检查，不占 GPU、不生成输出：
+
+```bash
+python3 scripts_mytrain/inference/historical/nano_noisy.py --check-only
+```
+
+推理复跑必须指定全新或空的 `/data/gaoya/...` 输出目录。三个环境的具体命令见 [历史推理说明](scripts_mytrain/inference/historical/README.md) 和 [同等级实验说明](scripts_mytrain/inference/equal_sigma/README.md)。
+
+已完成的验证：
+
+- **历史 Wan / Nano**：默认 clean / noisy 各一例，共4个视频与历史视频逐字节一致。
+- **历史 Predict2.5**：输入与完整 context / timestep 审计一致，但 clean / noisy 视频仍有像素差异；原始未拆分脚本对照也有差异，具体原因尚未确定，不能标为严格复现成功。
+- **同等级实验**：三个 backbone 的每次调用均通过 sigma / timestep 严格相等检查，输入与初始噪声配对检查通过；这证明对照设置按代码执行，不代表生成质量一定更好。
+- **视频发布**：9个视频通过解码与本地 HTTP 文件校验；上传视频哈希与本地生成文件一致。
+
+证据：[历史复现报告](scripts_mytrain/inference/historical/verification.json) · [原6个视频清单](demos/gap038/manifest.json) · [同等级实验报告](demos/gap038/equal_sigma_manifest.json)。
+
+## 许可
+
+保留各源文件既有版权和许可声明；上游模型、工程与依赖遵循各自许可。Predict2.5 原生代码许可见 [LICENSE](training/predict25/native/LICENSE)。

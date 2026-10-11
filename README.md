@@ -127,3 +127,5 @@ python3 scripts_mytrain/inference/historical/nano_noisy.py --check-only
 ## 许可
 
 保留各源文件既有版权和许可声明；上游模型、工程与依赖遵循各自许可。Predict2.5 原生代码许可见 [LICENSE](training/predict25/native/LICENSE)。
+
+[新增：首步 clean · 全程条件角色的10个视频对照](demos/condition-role-clean-first/README.md)。

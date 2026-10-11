@@ -62,3 +62,7 @@ python -m unittest test_condition_role test_clean_first test_initial_only
 ```
 
 本次上传源码、配置模板、测试和验证记录，不包含新视频、数据集或权重。本机服务地址及环境路径未公开。
+
+## 已上传的视频
+
+[5份权重 × 2种推理的视频对照](../../../demos/condition-role-clean-first/README.md)，包括原始 MP4、并排播放页面及 SHA256 清单。

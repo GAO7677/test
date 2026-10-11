@@ -1,0 +1,155 @@
+{
+  "description": "Original generated MP4 bytes; no transcoding. Both protocols keep context in conditioning role throughout.",
+  "videos": [
+    {
+      "file": "wan_A_clean_rebuild_condition.mp4",
+      "backbone": "wan",
+      "group": "A",
+      "protocol": "clean_rebuild",
+      "sha256": "f2408a6a6f03b65d1d72ed2fd8ff471a9e581316d43638d1ad9273e16affc646",
+      "bytes": 2002816,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "f2408a6a6f03b65d1d72ed2fd8ff471a9e581316d43638d1ad9273e16affc646"
+      }
+    },
+    {
+      "file": "wan_A_clean_free_condition.mp4",
+      "backbone": "wan",
+      "group": "A",
+      "protocol": "clean_free",
+      "sha256": "2b96f46c62e06f3fecf4ed16e67d5c8c2eaf373f68fa81bee897cceda31b21ac",
+      "bytes": 699340,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "2b96f46c62e06f3fecf4ed16e67d5c8c2eaf373f68fa81bee897cceda31b21ac"
+      }
+    },
+    {
+      "file": "nano_A_clean_rebuild_condition.mp4",
+      "backbone": "nano",
+      "group": "A",
+      "protocol": "clean_rebuild",
+      "sha256": "aa587e17d0802e4dde70cbbbfe094be606cd6800c588888bc1e6d3b1ea40a1d8",
+      "bytes": 1120559,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "aa587e17d0802e4dde70cbbbfe094be606cd6800c588888bc1e6d3b1ea40a1d8"
+      }
+    },
+    {
+      "file": "nano_A_clean_free_condition.mp4",
+      "backbone": "nano",
+      "group": "A",
+      "protocol": "clean_free",
+      "sha256": "863d0804a8fc5d6dbb65901c2bd4ae21ff8befbdf7f9fcfb5bfc814ec4cd9793",
+      "bytes": 1031187,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "863d0804a8fc5d6dbb65901c2bd4ae21ff8befbdf7f9fcfb5bfc814ec4cd9793"
+      }
+    },
+    {
+      "file": "predict25_N75_clean_rebuild_condition.mp4",
+      "backbone": "predict25",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "sha256": "719982c67c3aae04d2b05d5cc9d3799a554ad0d684a66727238c28de85735427",
+      "bytes": 363066,
+      "validation": {
+        "status": "PASS",
+        "steps": 36,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "719982c67c3aae04d2b05d5cc9d3799a554ad0d684a66727238c28de85735427"
+      }
+    },
+    {
+      "file": "predict25_N75_clean_free_condition.mp4",
+      "backbone": "predict25",
+      "group": "N75",
+      "protocol": "clean_free",
+      "sha256": "18f060aac94d9a8acf2af74d8f366063da82389ac307a938dc2043dfcb30c579",
+      "bytes": 67983,
+      "validation": {
+        "status": "PASS",
+        "steps": 36,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "18f060aac94d9a8acf2af74d8f366063da82389ac307a938dc2043dfcb30c579"
+      }
+    },
+    {
+      "file": "wan_N75_clean_rebuild_condition.mp4",
+      "backbone": "wan",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "sha256": "039ba96c783e5242db933768c239406d8294c428673176e4737c9636efb041c4",
+      "bytes": 1376348,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "039ba96c783e5242db933768c239406d8294c428673176e4737c9636efb041c4"
+      }
+    },
+    {
+      "file": "wan_N75_clean_free_condition.mp4",
+      "backbone": "wan",
+      "group": "N75",
+      "protocol": "clean_free",
+      "sha256": "d86a71221205057a5b0c36ac2465ac8b5ecfabbe51620734855fdb59dad250bc",
+      "bytes": 696156,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "d86a71221205057a5b0c36ac2465ac8b5ecfabbe51620734855fdb59dad250bc"
+      }
+    },
+    {
+      "file": "nano_N75_clean_rebuild_condition.mp4",
+      "backbone": "nano",
+      "group": "N75",
+      "protocol": "clean_rebuild",
+      "sha256": "6d7bf532264250989b2b9cbc65a059b83fbdcad1d7f8e726f3beb29a2da58193",
+      "bytes": 1151691,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "6d7bf532264250989b2b9cbc65a059b83fbdcad1d7f8e726f3beb29a2da58193"
+      }
+    },
+    {
+      "file": "nano_N75_clean_free_condition.mp4",
+      "backbone": "nano",
+      "group": "N75",
+      "protocol": "clean_free",
+      "sha256": "ca6ebca2cb0adf79d7cccd8568b2441fb05e1583bc2339160f82264c399d96e4",
+      "bytes": 1020024,
+      "validation": {
+        "status": "PASS",
+        "steps": 40,
+        "frames": 49,
+        "actual_role_time_verified": true,
+        "video_sha256": "ca6ebca2cb0adf79d7cccd8568b2441fb05e1583bc2339160f82264c399d96e4"
+      }
+    }
+  ]
+}

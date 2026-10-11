@@ -2,7 +2,7 @@
 
 新增：[首步 clean → 重建／自由演化 · 全程条件角色：代码、配置及10组验证](scripts_mytrain/inference/single_case/CONDITION_ROLE.md)。
 
-本仓库整理 **Wan、Cosmos3-Nano、Cosmos-Predict2.5** 的训练代码来源、历史 clean / noisy 推理，以及 context 与 future 同等级加噪的推理对照。当前提供 `v2v_gap_038` 样本的 **9 个实际生成视频**、对应代码和逐步噪声记录。
+本仓库整理 **Wan、Cosmos3-Nano、Cosmos-Predict2.5** 的训练代码来源、历史 clean / noisy 推理，以及 context 与 future 同等级加噪的推理对照。当前提供 `v2v_gap_038` 样本的 **9 个历史推理视频及10个首步 clean 条件角色对照视频**，并附对应代码、配置和验证记录。
 
 同一 backbone 的三个推理版本共用同一份 **N75 训练权重**。`clean` 指推理时使用干净 context，不代表使用了 clean 训练权重；`equal_sigma` 是推理对照，没有重新训练。
 
@@ -16,6 +16,20 @@
 | Context / future 同等级加噪实验 | [equal_sigma/README.md](scripts_mytrain/inference/equal_sigma/README.md) |
 | 9 个视频与来源说明 | [demos/gap038/README.md](demos/gap038/README.md) |
 | 支持联动播放的对比页 | [comparison.html](demos/gap038/comparison.html)，需通过下方 HTTP 服务打开 |
+
+## Backbone 与训练方案
+
+Wan（PhysRVG DiT 起点）、Cosmos3-Nano（MoT）和 Cosmos-Predict2.5（DiT）是三个 backbone。**A/C/N75 表示训练方案，clean/noisy/equal_sigma 表示推理设置**：同一 N75 权重可以进行 clean 推理。
+
+| 训练组 | Context 输入噪声等级 | Future 监督 |
+|---|---|---|
+| C | 干净，sigma_c=0 | Future-only Flow Matching MSE |
+| A | 与 future 相同，sigma_c=sigma_f | 同上 |
+| N75 | sigma_c=Q(0.75*sigma_f)，Q 为训练网格最近邻 | 同上 |
+
+这些变体还涉及时间嵌入和条件标记：Wan 使用逐 token timestep；Nano C 的 context 不加去噪时间嵌入、A/N75 作为 noisy token；Predict2.5 C 的 context mask=1、A/N75 mask=0。它们不是单独改变噪声强度的消融。
+
+完整公式、三模型对照、loss、训练代码和证据范围见 [训练方法 README](training/README.md)。项目记录中 Wan/Nano 有 A/C/N75，Predict2.5 有 C/N75，A 仅代码支持；仓库训练证据主要归档 N75，不包含所有训练组的完整资产或权重。
 
 ## 视频对比
 

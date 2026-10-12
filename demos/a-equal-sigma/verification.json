@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BYTE_EXACT_BOTH",
+  "provenance": {
+    "github": "https://github.com/GAO7677/test",
+    "commit": "45250881998aff9d5c839bb7e2b08c1bc49fd657",
+    "pinned_dependencies_verified": true,
+    "entry_sampling_common_match_historical": true,
+    "external_model_repo": "/home/gaoya/code_V2V_baselines/PhysRVG-main"
+  },
+  "repository_unmodified": true,
+  "results": [
+    {
+      "backbone": "wan",
+      "reference": "/data/gaoya/agent-data/outputs_v1/context_inference_audit/20261010_input_reference/wan_A_equal_sigma/video.mp4",
+      "reference_sha256": "924e9e78284c2e02f6e9469e5b97bad03095f86fc42346e3269a5b090898e53d",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT"
+    },
+    {
+      "backbone": "nano",
+      "reference": "/data/gaoya/agent-data/outputs_v1/context_inference_audit/20261010_input_reference/nano_A_equal_sigma/video.mp4",
+      "reference_sha256": "7c90da3c3ab92dd4c5a9646b6cd7b619ccf8f33e385259de6db9b4c549f92b91",
+      "video_bytes_equal": true,
+      "decoded_pixels_equal": true,
+      "frames": 49,
+      "mse": 0.0,
+      "max_abs": 0,
+      "psnr_db": null,
+      "status": "BYTE_EXACT"
+    }
+  ],
+  "scope": "Two gap038 A equal_sigma no-cache runs; existing local model code, weights and environments are required; not a clean-machine installation test"
+}

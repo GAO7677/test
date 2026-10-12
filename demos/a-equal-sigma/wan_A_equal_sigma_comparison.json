@@ -1,0 +1,11 @@
+{
+  "reference": "/data/gaoya/agent-data/outputs_v1/context_inference_audit/20261010_input_reference/wan_A_equal_sigma/video.mp4",
+  "reference_sha256": "924e9e78284c2e02f6e9469e5b97bad03095f86fc42346e3269a5b090898e53d",
+  "video_bytes_equal": true,
+  "decoded_pixels_equal": true,
+  "frames": 49,
+  "mse": 0.0,
+  "max_abs": 0,
+  "psnr_db": null,
+  "status": "BYTE_EXACT"
+}

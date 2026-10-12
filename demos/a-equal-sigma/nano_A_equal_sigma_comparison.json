@@ -1,0 +1,11 @@
+{
+  "reference": "/data/gaoya/agent-data/outputs_v1/context_inference_audit/20261010_input_reference/nano_A_equal_sigma/video.mp4",
+  "reference_sha256": "7c90da3c3ab92dd4c5a9646b6cd7b619ccf8f33e385259de6db9b4c549f92b91",
+  "video_bytes_equal": true,
+  "decoded_pixels_equal": true,
+  "frames": 49,
+  "mse": 0.0,
+  "max_abs": 0,
+  "psnr_db": null,
+  "status": "BYTE_EXACT"
+}

@@ -1,0 +1,19 @@
+{
+  "official_adapter_root": "/home/gaoya/code_Video_CONTEXT/official_finetune",
+  "checkpoint": "/data/gaoya/agent-data/outputs_v1/official_finetune/20261009_predict25_noema_formal/physrvg-full-sa/official-finetune-prefix49/official-ft-predict25-noema-b4-eb8-3000-20261009/checkpoints/iter_000001500_model.pt",
+  "checkpoint_identity": {
+    "iter_000001500_model.pt": "d275b58c73bb9b2b8ec7b7b5b8a0df3e1ecfe673b51cd97761e55af12764cb04"
+  },
+  "sampling": {
+    "num_steps": 35,
+    "guidance": 7.0,
+    "seed": 0,
+    "negative_prompt": "official_default",
+    "weights": "ordinary_policy_not_ema"
+  },
+  "source_sha256": {
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/evaluation/predict25.py": "294ec39eccddfbd0d7fa2fbf12c5ddb102c43fd7efeecdc92306ff89a6081338",
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/evaluation/common.py": "c18f37ec00d178f2a6124b76cc4d04ca9e287ec4a0c38e8f0bc09f4b9d3d7365",
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/adapted8_eval/worker.py": "6a3e40e1690003242e705265c7f8d9068dc056be72d7aa65ecfbfe3e9087a76e"
+  }
+}

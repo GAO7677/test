@@ -1,0 +1,11 @@
+{
+  "entry": "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/inference/infer_full_sa_lora_json_list.py",
+  "model_repo": "/home/gaoya/code_V2V_baselines/PhysRVG-main",
+  "base": "/data/gaoya/ckpt/Wan-AI-Wan2.2-TI2V-5B-Diffusers",
+  "dit": "/data/gaoya/ckpt/HappyP4nda-PhysRVG/dit/diffusion_pytorch_model.safetensors",
+  "lora": null,
+  "fixed_prompt": "input_caption",
+  "source_sha256": {
+    "/home/gaoya/code_V2V_baselines/PhysRVG-main/scripts_mytrain/inference/infer_full_sa_lora_json_list.py": "888c470af7e12d56328c7020691aad50ebdcbba145ca85dccdd04d55c44ce6b1"
+  }
+}

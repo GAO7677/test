@@ -1,0 +1,24 @@
+{
+  "official_adapter_root": "/home/gaoya/code_Video_CONTEXT/official_finetune",
+  "checkpoint": "/data/gaoya/agent-data/outputs_v1/official_finetune/20261008_nano_formal/physrvg-full-sa/official-finetune-prefix49/nano-official-lora-noema-b2-eb8-3000-20261008/checkpoints/iter_000001500/model",
+  "checkpoint_identity": {
+    ".metadata": "749a4ccb2f04344df7199afce96d8ac34eb9bb4621b8a9228e295f0a03c4d88f",
+    "__0_0.distcp": "b1f74a0553c40072bf3e5f8903e3bbf2cb3e455eda3ec1792a2ca7ded747af6c",
+    "__1_0.distcp": "1a9980eb49cf4f6e712375f913e4e866a026f2050597438435c4f97b41dabca4"
+  },
+  "sampling": {
+    "num_steps": 40,
+    "guidance": 6.0,
+    "seed": 42,
+    "shift": 10.0,
+    "sampler": "unipc",
+    "negative_prompt_policy": "historical_nano_negative_prompt.json",
+    "duration_template": "",
+    "resolution_template": ""
+  },
+  "source_sha256": {
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/evaluation/nano.py": "8ef9f03cdcacda3f6a9ec0797a1a36e1e1521d13c695ef7a597469daac708246",
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/evaluation/common.py": "c18f37ec00d178f2a6124b76cc4d04ca9e287ec4a0c38e8f0bc09f4b9d3d7365",
+    "/home/gaoya/code_Video_CONTEXT/official_finetune/adapted8_eval/worker.py": "6a3e40e1690003242e705265c7f8d9068dc056be72d7aa65ecfbfe3e9087a76e"
+  }
+}

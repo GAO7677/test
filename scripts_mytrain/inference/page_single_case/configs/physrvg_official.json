@@ -1,0 +1,11 @@
+{
+  "entry": "/home/gaoya/code_V2V_baselines/PhysRVG-main/inference.py",
+  "model_repo": "/home/gaoya/code_V2V_baselines/PhysRVG-main",
+  "base": "/data/gaoya/ckpt/Wan-AI-Wan2.2-TI2V-5B-Diffusers",
+  "dit": "/data/gaoya/ckpt/HappyP4nda-PhysRVG/dit/diffusion_pytorch_model.safetensors",
+  "lora": "/data/gaoya/ckpt/HappyP4nda-PhysRVG/lora/checkpoint",
+  "fixed_prompt": "The video shows rigid body motion.",
+  "source_sha256": {
+    "/home/gaoya/code_V2V_baselines/PhysRVG-main/inference.py": "c63be4a8b72991deeb724c84d01cab686badceb4477959ff4f8e7c5ca04532c3"
+  }
+}

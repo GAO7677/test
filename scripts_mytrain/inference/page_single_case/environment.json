@@ -1,0 +1,35 @@
+{
+  "physrvg-full-sa": {
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "packages": {
+      "torch": "2.7.1",
+      "diffusers": "0.35.1",
+      "transformers": "4.56.2",
+      "numpy": "2.2.6",
+      "imageio": "2.37.3",
+      "safetensors": "0.8.0"
+    }
+  },
+  "cosmos_nano_acn75": {
+    "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+    "packages": {
+      "torch": "2.9.0",
+      "diffusers": "0.40.0",
+      "transformers": "5.17.0",
+      "numpy": "2.2.6",
+      "imageio": "2.37.3",
+      "safetensors": "0.8.0"
+    }
+  },
+  "cosmos_predict25_official": {
+    "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+    "packages": {
+      "torch": "2.9.1",
+      "diffusers": "0.37.0.dev0",
+      "transformers": "4.51.3",
+      "numpy": "2.2.6",
+      "imageio": "2.37.3",
+      "safetensors": "0.8.0"
+    }
+  }
+}

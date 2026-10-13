@@ -1,5 +1,5 @@
 {
-  "scope": "Three historical Test70_v2 cases per published profile; no complete-benchmark or other-checkpoint claim",
+  "scope": "Six byte-exact profiles plus Predict2.5 baseline published with explicit failed-reproduction status; three cases each. No complete-benchmark claim.",
   "results": [
     {
       "profile": "nano_baseline",
@@ -268,5 +268,7 @@
       "byte_exact": 3,
       "publish_eligible": true
     }
-  ]
+  ],
+  "publication_note": "all_profile_outcomes.publish_eligible preserves the original byte-exact gate. Predict2.5 baseline is now published by explicit user authorization without changing its failed verification status.",
+  "predict25_baseline_details": "predict25_baseline_verification.json"
 }

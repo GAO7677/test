@@ -6,7 +6,7 @@
 
 同一 backbone 的三个推理版本共用同一份 **N75 训练权重**。`clean` 指推理时使用干净 context，不代表使用了 clean 训练权重；`equal_sigma` 是推理对照，没有重新训练。
 
-新增：[Test70_v2 baseline / official-ft 单case入口与复现验收](scripts_mytrain/inference/page_single_case/README.md)：6个分支各3例逐字节一致；包含实际配置、依赖边界和逐例哈希。
+新增：[Test70_v2 baseline / official-ft 单case入口与复现验收](scripts_mytrain/inference/page_single_case/README.md)：已收录7个分支：6个分支各3例逐字节一致；Predict2.5 baseline三例生成成功但复现未通过，单独标注。包含实际配置、依赖边界和逐例哈希。
 
 ## 快速导航
 

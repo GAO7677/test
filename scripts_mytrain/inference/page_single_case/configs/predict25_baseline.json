@@ -1,0 +1,87 @@
+{
+  "entry": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/clean/baselines_68/source/predict25_entry.py",
+  "settings": {
+    "assets": {
+      "native_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/base/post-trained/81edfebe-bd6a-4039-8c1d-737df1a790bf_ema_bf16.pt",
+      "native_checkpoint_sha256": "565bbb2c9645737327983f4461e4d32627bba465b0a8dc26447edea144e1ff47",
+      "vae_checkpoint": "/data/gaoya/ckpt/nvidia-Cosmos-Predict2.5-2B/tokenizer.pth",
+      "vae_checkpoint_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "text_weights": "/data/gaoya/ckpt/Cosmos-Reason1-7B"
+    },
+    "input": {
+      "context_rgb_frames": 8,
+      "context_latents": 2,
+      "policy": "encode_prefix8_then_take_first2_latents"
+    },
+    "output": {
+      "height": 512,
+      "width": 896,
+      "frames": 49
+    },
+    "benchmarks": {
+      "test89": {
+        "manifest": "/data/gaoya/AAA_test_video/Context_Video_bench/Test89/clean/predict25/configuration/test89_cases.json",
+        "count": 89,
+        "fps": 24
+      },
+      "test70": {
+        "manifest": "/data/gaoya/agent-data/outputs_v1/geometry_sweep_bench/20260929_unified_evaluation/cosmos-test70/manifest.json",
+        "count": 70,
+        "fps": 30
+      },
+      "test70_v2": {
+        "manifest": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/clean/baselines_68/manifest.json",
+        "count": 68,
+        "fps": 30
+      }
+    },
+    "training_settings": {
+      "C": "/data/gaoya/AAA_test_video/Context_Video_bench/Test89/clean/predict25/configuration/C_training.json",
+      "N75": "/data/gaoya/AAA_test_video/Context_Video_bench/Test89/clean/predict25/configuration/N75_training.json",
+      "A": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/settings.json"
+    },
+    "sampling": "Retain official native defaults: 35 steps, guidance7, seed0; official negative prompt",
+    "output_base": "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/clean/baselines_68",
+    "guardrails": "not instantiated in benchmark generation; native sampling pipeline is used",
+    "negative_prompt_policy": "official_default",
+    "negative_prompt_text": "The video captures a series of frames showing ugly scenes, static with no motion, motion blur, over-saturation, shaky footage, low resolution, grainy texture, pixelated images, poorly lit areas, underexposed and overexposed scenes, poor color balance, washed out colors, choppy sequences, jerky movements, low frame rate, artifacting, color banding, unnatural transitions, outdated special effects, fake elements, unconvincing visuals, poorly edited content, jump cuts, visual noise, and flickering. Overall, the video is of poor quality.",
+    "negative_prompt_sha256": "6d7ca93077e7e4a8417947ab03266c97dd44c9ec0d7b97fa4272ed956895239f"
+  },
+  "model_repo": "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5",
+  "source_sha256": {
+    "/data/gaoya/AAA_test_video/Context_Video_bench/Test70_v2/clean/baselines_68/source/predict25_entry.py": "430bb42cdf8824d3f376699f984a6f4988d4d8f33a02918ce27bfc792ff4373e",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/audit.py": "e2666cbdb9e5b85e0f62c5fc5980aea745d26ef173d6806401f4689b67fbf8c4",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/evaluation_worker.py": "a760b998c928ef1e94d9054038e65b71fce0136081581aea7c423ac14003fdb8",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/__init__.py": "20268b464f93e929fde866627d8b23acdc47c5468a16c835b49861e5ad1a82dc",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/verify_run.py": "1f8b25077888dfa9633b19b84f3a63ff2725ef80de61bb82386fe9a09368cb72",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/test_mechanism.py": "6fd1fad4a55c7d2eb2b51148229b39257351f30c5b0823039dcc88d5afe3c40a",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/verify_encoding_batch.py": "9a4085b0bf4be6b5cf84ec619492ab2cb46d9728f4b6088cb5358556c974057a",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/metrics_overlay.py": "8d272d346facc2e96b977b5c4192744ceb72587e975c59032442cd32c831b463",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/verify_cache.py": "dd384b82a4c9f73f1b498fe0325615e5f3d967cd88cf363de4c48b1f15e7cbad",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/test_evaluation.py": "8083f33ba73bcc31e77ec445f75c6144576afb6e3ef09e9014293b532078ad2e",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/probe_text_batch.py": "4df167a3e133e9f9ed6fa6cc043b16b045fc66096265fe49f494809284f77ba5",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/retire_old_cache.py": "b56f2781031fe9c3e8889573861392ad6291874a5647ddb76d9693ff8cc50d7e",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/prepare_cache.py": "924e508cb1ee63133b72966e1a2ef5aa741f6e10f29457ec6501375f42a0ec9b",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/progress.py": "15c8d146b1a290fc7e93db6fb9a0cff8153518f3a40f12b564daab020daf22ed",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/metric_memory_limit.py": "b47c83e6746003696da0a3f2490c39c18d52df9fbf401cc5e488ed81afaf9dea",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/n75_mb4_config.py": "492446fc14d2afaf90c3da20c04ec5935f24281933a805e93f87534cb26aa4c3",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/model.py": "dcbeb3b74778a1bc402068247cb3b6a0597de2e3c59ea1ddccbd40cb948c39b1",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/evaluate_watch.py": "50498fadfc34ca6e4f5b843febd35fa306669f3eaaa38673eefb5ada0dd56520",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/inference_io.py": "a8344b6dd204d25786319a9495540ccd1e64a090fd88629ae500166d80e1f80d",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/test_inference.py": "9effbafcedf8051fcbe52347b294e59e3086781ae4f8bf092b0e65a2c381203d",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/inference_runtime.py": "701a315bdfdb3d2befb2d3fc65707a1fddaeea15ff76c99fd2c12c604e833963",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/summarize_memory_probe.py": "c381140ccc19abb9f7942cb125ebd2d6595d5b05171b24d4b540da33bda39bb5",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/official_bench.py": "257ddba185ec8e98351553e99380a168126f82b612c227241a9896153723cd02",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/evaluation_image_metrics.py": "72a29342f886cca4f9b7d2bdc6c9d3de830dd65fcd86878ad90ab4f97b70c58f",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/memory_probe_config.py": "7c0332efdd362afe34406387e3fabd06de64c99d16509b61ec041b67b224db65",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/prepare_text.py": "0f8bf73230349895b56104c544eaa277d50bec363c414566c2dd4f2ac5945489",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/data.py": "5bf77c0f9d27d3ad93ac08737ec9b3ae214956a86062cb7f43100b2666ca9feb",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/c_mb4_config.py": "3f0e43ca8f8d267842bf866505a66479ae8f07758c90c8f49052d50a541ecb46",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/config.py": "d52473ec2435ba99d0e4629c70c465ae56708c070763648be2e4584a2945fa8c",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/mechanism.py": "66dbbca0e294902565c67f3e9665368fe4c69d25eaeaa1ae3484e74260331721",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/baseline_watch.py": "83921e0c534f5ae710f485ccbe57d6f32a9bb1964a35dfc00b55c4dc152760f8",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/infer_bench.py": "7672dce925f4e2fcb413f43c7b55e380634599a3dd1da7435e3f89793c4c25a6",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/text.py": "a3283d2638be964bf55cbf4afd9ca4ea990e2f4271d6c7b9ad0af03a87e2e592",
+    "/home/gaoya/Code_Video/Code_MODEL/cosmos-predict2.5/projects/generic_acn75/evaluation_common.py": "b295ab81dc8ffbaa32b3e4dd291226caea3dbeaad182e0dee8b01e30711e17c7"
+  }
+}

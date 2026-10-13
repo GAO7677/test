@@ -1,0 +1,122 @@
+{
+  "status": "DIFFERENT_REQUIRES_REVIEW",
+  "publication": "User explicitly authorized publishing despite failed exact reproduction",
+  "results": [
+    {
+      "job": "predict25_baseline__v2v_domino_g045",
+      "exit_code": 0,
+      "command": [
+        "bash",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/run_one.sh",
+        "predict25",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/predict25_baseline.py",
+        "--config",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/configs/predict25_baseline.json",
+        "--video",
+        "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_domino_g045/videos/rgb_cycles.mp4",
+        "--prompt",
+        "A ball is moving across a floor.",
+        "--case",
+        "v2v_domino_g045",
+        "--gpu",
+        "6",
+        "--output",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/runs/predict25_baseline__v2v_domino_g045"
+      ],
+      "status": "DIFFERENT",
+      "reference_sha256": "9c5e9482ca9b1ede14c67869a09ef1778754ddb3096d872ad17b88142461b48f",
+      "video_sha256": "65e9619854eb5f3e51331ec337e965b3a93d04c98f864a4997f66abf74b034d1",
+      "frames": 49,
+      "mse": 7.483973363166416,
+      "max_abs": 89
+    },
+    {
+      "job": "predict25_baseline__v2v_bowl_r180",
+      "exit_code": 0,
+      "command": [
+        "bash",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/run_one.sh",
+        "predict25",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/predict25_baseline.py",
+        "--config",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/configs/predict25_baseline.json",
+        "--video",
+        "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_bowl_r180/videos/rgb_cycles.mp4",
+        "--prompt",
+        "A ball is on the inner wall of a curved bowl.",
+        "--case",
+        "v2v_bowl_r180",
+        "--gpu",
+        "6",
+        "--output",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/runs/predict25_baseline__v2v_bowl_r180"
+      ],
+      "status": "DIFFERENT",
+      "reference_sha256": "609e3fd44f53e6f317eba930835aebebeff9b6c4395fb0918f7e6d89649705c9",
+      "video_sha256": "f948b78d9bed63b08c3573679d78563ff491e532fb89afb59fbc7f3a75478c0b",
+      "frames": 49,
+      "mse": 9.359859485088679,
+      "max_abs": 75
+    },
+    {
+      "job": "predict25_baseline__v2v_gap_038",
+      "exit_code": 0,
+      "command": [
+        "bash",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/run_one.sh",
+        "predict25",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/predict25_baseline.py",
+        "--config",
+        "/home/gaoya/code_Video_CONTEXT/k600_n75_official_ft/inference/page_single_case_v1/configs/predict25_baseline.json",
+        "--video",
+        "/data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4",
+        "--prompt",
+        "A ball is moving across a raised platform.",
+        "--case",
+        "v2v_gap_038",
+        "--gpu",
+        "6",
+        "--output",
+        "/data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/runs/predict25_baseline__v2v_gap_038"
+      ],
+      "status": "DIFFERENT",
+      "reference_sha256": "f80f20c0d5c08cd61b1116d2e14daf1bc2cd3307d9c45222fd8a7f4f26566a5c",
+      "video_sha256": "227d8a5c57948573ac07404b2e128a9e2ba3c2b5eb82f55a09bd2de7af408307",
+      "frames": 49,
+      "mse": 11.167317915935906,
+      "max_abs": 202
+    }
+  ],
+  "paired_checks": [
+    {
+      "case": "v2v_gap_038",
+      "input_rgb_equal": true,
+      "sampling_equal": true,
+      "context_shape_equal": true,
+      "base_sha_equal": true,
+      "both_no_adapter": true,
+      "implementation_sha_equal": true,
+      "official_entrypoint_sha_equal": true
+    },
+    {
+      "case": "v2v_bowl_r180",
+      "input_rgb_equal": true,
+      "sampling_equal": true,
+      "context_shape_equal": true,
+      "base_sha_equal": true,
+      "both_no_adapter": true,
+      "implementation_sha_equal": true,
+      "official_entrypoint_sha_equal": true
+    },
+    {
+      "case": "v2v_domino_g045",
+      "input_rgb_equal": true,
+      "sampling_equal": true,
+      "context_shape_equal": true,
+      "base_sha_equal": true,
+      "both_no_adapter": true,
+      "implementation_sha_equal": true,
+      "official_entrypoint_sha_equal": true
+    }
+  ]
+}

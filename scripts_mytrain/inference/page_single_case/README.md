@@ -1,13 +1,13 @@
-# Test70_v2：已通过复现的单 case 入口
+# Test70_v2：单 case 入口与复现状态
 
-本目录只发布三例均MP4逐字节一致的分支。每个入口接收一份video/prompt，通过原归档入口或runtime执行；没有重写forward、scheduler、CFG或VAE。
+本目录包含7个分支：6个分支三例均MP4逐字节一致；Predict2.5 baseline按用户要求收录，但三例均未通过严格复现。每个入口接收一份video/prompt，通过原归档入口或runtime执行；没有重写forward、scheduler、CFG或VAE。
 
 **依赖边界：主文件是轻量包装，原模型仓库、历史辅助模块、环境及权重仍需在配置所列本机路径存在。不是仅clone即可运行的独立安装包；未上传模型权重、数据或复制完整辅助推理代码。**
 
 | 分支 | 已完成 | 字节一致 | 本目录发布 |
 |---|---:|---:|---|
 | nano_baseline | 3/3 | 3/3 | [nano_baseline.py](nano_baseline.py) |
-| predict25_baseline | 3/3 | 0/3 | 未通过，不发布脚本 |
+| predict25_baseline | 3/3 | 0/3 | [predict25_baseline.py](predict25_baseline.py)；已收录，复现未通过 |
 | wan_lora_off | 3/3 | 3/3 | [wan_lora_off.py](wan_lora_off.py) |
 | physrvg_official | 3/3 | 3/3 | [physrvg_official.py](physrvg_official.py) |
 | nano_official_ft | 3/3 | 3/3 | [nano_official_ft.py](nano_official_ft.py) |
@@ -34,6 +34,16 @@ Nano official-ft保留8RGB→重复末帧到9→编码取2latent；Predict2.5保
 
 ```bash
 bash /data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/run_one.sh nano scripts_mytrain/inference/page_single_case/nano_baseline.py --config scripts_mytrain/inference/page_single_case/configs/nano_baseline.json --video /data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4 --prompt 'A ball is moving across a raised platform.' --case v2v_gap_038 --gpu 5 --output /data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/repeat_nano_baseline_NEW
+```
+
+### predict25_baseline（复现未通过）
+
+使用官方post-trained基础权重、无项目LoRA；前8RGB编码为2个条件latent，全程clean条件角色（mask=1、原生条件时间0.1）。保留历史入口及原生采样器，num_steps35实际36次迭代、CFG7、seed0、49帧、512×896、30FPS，在线编码。
+
+三例均成功生成，但与历史参考存在像素差异：gap038 MSE=11.167318、bowl_r180=9.359859、domino_g045=7.483973（解码RGB 0–255尺度）。输入、已核对源码、权重及采样参数一致，差异阶段尚未定位；不能将本次收录视为复现通过。[逐例证据](predict25_baseline_verification.json)。仍依赖配置中列出的外部入口/runtime。
+
+```bash
+bash /data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/20261013_page_single_case_v1/run_one.sh predict25 scripts_mytrain/inference/page_single_case/predict25_baseline.py --config scripts_mytrain/inference/page_single_case/configs/predict25_baseline.json --video /data/gaoya/agent-data/outputs_v1/geometry_transfer/20261006_test70_v2_latest/test70_v2/samples/v2v_gap_038/videos/rgb_cycles.mp4 --prompt 'A ball is moving across a raised platform.' --case v2v_gap_038 --gpu 5 --output /data/gaoya/agent-data/outputs_v1/k600_context_mechanisms/repeat_predict25_baseline_NEW
 ```
 
 ### wan_lora_off

@@ -1,0 +1,19 @@
+name: my_chimera
+model: chimera_sd21
+paths:
+  base_model: ${SD21_MODEL}
+  output_root: ${FEWSHOT_OUTPUT}
+data:
+  root: ${FEWSHOT_DATA}
+train:
+  rank: 4
+  steps: 400
+  batch_size: 4
+  learning_rate: 0.0001
+  learning_rate_b: 0.001
+  # Historical multi-head intermediate checkpoint resume is not validated.
+  # Final shared-A + per-image-B adapters are saved after training.
+  checkpoint_every: 100000000
+tracking:
+  enabled: false
+  project: fewshot-generation

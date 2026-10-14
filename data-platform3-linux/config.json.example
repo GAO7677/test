@@ -1,0 +1,148 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3307,
+    "username": "dp_linux",
+    "password": "REPLACE_BEFORE_STARTING",
+    "dbname": "data_platform_linux"
+  },
+  "upload_dir": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/runtime/Uploads",
+  "log_dir": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/runtime/Logs",
+  "jwt_secret": "<首次启动时自动生成随机密钥并写回>",
+  "server_port": 8000,
+  "security": {
+    "max_login_attempts": 5,
+    "lockout_duration_minutes": 30,
+    "session_timeout_minutes": 120,
+    "allow_concurrent_sessions": true
+  },
+  "models": {
+    "vad_path": "/mnt/data/gaoya/agent-data/apps/data-platform3-linux/models/silero_vad.onnx",
+    "ner_path": "",
+    "whisper_path": "/mnt/data/gaoya/agent-data/apps/data-platform3-linux/models/faster-whisper-small",
+    "gliner_path": "/mnt/data/gaoya/agent-data/apps/data-platform3-linux/models/gliner_x_small",
+    "sam3_path": "",
+    "sam2_path": ""
+  },
+  "fewshot": {
+    "repo": "/mnt/data/gaoya/agent-data/apps/data-platform3-linux/integrations/fewshot",
+    "python": "/mnt/data/gaoya/agent-data/envs/beyondobjects_flux2/bin/python",
+    "base_model": "/mnt/data/gaoya/agent-data/weights/beyondobjects_flux2/FLUX.2-klein-base-4B",
+    "output_root": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux",
+    "gpu": "GPU-439e8b22-75c0-55fc-283f-01f012c049ac",
+    "forbidden_gpu": "GPU-5ed79d61-2fa6-c557-ea9a-d9744b14dc84",
+    "tracking_project": "data-platform-fewshot",
+    "enabled": true,
+    "allow_shared_gpu": true,
+    "gpu_min_free_mb": 24576,
+    "gpu_reserve_mb": 4096,
+    "backends": {
+      "flux2_klein_base_4b": {
+        "python": "/mnt/data/gaoya/agent-data/envs/beyondobjects_flux2/bin/python",
+        "base_model": "/mnt/data/gaoya/agent-data/weights/beyondobjects_flux2/FLUX.2-klein-base-4B",
+        "gpu_min_free_mb": 24576,
+        "gpu_reserve_mb": 4096
+      },
+      "beyondobjects_sd21": {
+        "python": "/mnt/data/gaoya/agent-data/envs/beyondobjects/bin/python",
+        "base_model": "/mnt/data/gaoya/agent-data/weights/chimeralora/sd21-base",
+        "gpu_min_free_mb": 18432,
+        "gpu_reserve_mb": 4096
+      },
+      "chimera_sd21": {
+        "python": "/mnt/data/gaoya/agent-data/envs/beyondobjects/bin/python",
+        "base_model": "/mnt/data/gaoya/agent-data/weights/chimeralora/sd21-base",
+        "gpu_min_free_mb": 20480,
+        "gpu_reserve_mb": 4096
+      }
+    }
+  },
+  "local_materials": {
+    "rareplanes": {
+      "name": "RarePlanes · 合成训练图像",
+      "path": "/mnt/data/gaoya/dataset/RarePlanes/synthetic/train/images",
+      "metadata": {
+        "kind": "rareplanes_coco",
+        "sources": [
+          "/mnt/data/gaoya/dataset/RarePlanes/synthetic/metadata_annotations/instances_train_role.json"
+        ]
+      }
+    },
+    "laionsg": {
+      "name": "LAION-SG",
+      "path": "/mnt/data/gaoya/dataset/mengcy-LAION-SG/data",
+      "metadata": {
+        "kind": "laion_sg",
+        "sources": [
+          "/mnt/data/gaoya/dataset/mengcy-LAION-SG/dataset/train_all.json",
+          "/mnt/data/gaoya/dataset/mengcy-LAION-SG/dataset/val_all.json",
+          "/mnt/data/gaoya/dataset/mengcy-LAION-SG/dataset/test_all.json"
+        ]
+      }
+    },
+    "hpdv3": {
+      "name": "HPDv3",
+      "path": "/mnt/data/gaoya/dataset/MizzenAI-HPDv3/images",
+      "metadata": {
+        "kind": "hpd_pairs",
+        "sources": [
+          "/mnt/data/gaoya/dataset/MizzenAI-HPDv3/test.json",
+          "/mnt/data/gaoya/dataset/MizzenAI-HPDv3/all.json",
+          "/mnt/data/gaoya/dataset/MizzenAI-HPDv3/train.json"
+        ]
+      }
+    },
+    "aircraft": {
+      "name": "FGVC Aircraft · 飞机照片",
+      "path": "/mnt/data/gaoya/agent-data/datasets/chimeralora/fgvc_aircraft/fgvc-aircraft-2013b/data/images",
+      "metadata": {
+        "kind": "fgvc_variant",
+        "sources": [
+          "/mnt/data/gaoya/agent-data/datasets/chimeralora/fgvc_aircraft/fgvc-aircraft-2013b/data/images_variant_train.txt",
+          "/mnt/data/gaoya/agent-data/datasets/chimeralora/fgvc_aircraft/fgvc-aircraft-2013b/data/images_variant_val.txt",
+          "/mnt/data/gaoya/agent-data/datasets/chimeralora/fgvc_aircraft/fgvc-aircraft-2013b/data/images_variant_test.txt"
+        ]
+      }
+    },
+    "rareplanes_real": {
+      "name": "RarePlanes · 真实飞机裁剪（展示子集）",
+      "path": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/rareplanes_real",
+      "metadata": {
+        "kind": "platform_demo_manifest",
+        "sources": [
+          "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/rareplanes_real/browse_metadata.json"
+        ]
+      }
+    },
+    "phyco_frames": {
+      "name": "PhyCo Kubric · 仿真首帧（展示子集）",
+      "path": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/phyco_frames",
+      "metadata": {
+        "kind": "platform_demo_manifest",
+        "sources": [
+          "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/phyco_frames/browse_metadata.json"
+        ]
+      }
+    },
+    "physics_switches": {
+      "name": "Physics IQ · 场景帧（展示子集）",
+      "path": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/physics_switches",
+      "metadata": {
+        "kind": "platform_demo_manifest",
+        "sources": [
+          "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_platform_dataset_demo/fewshot_materials/physics_switches/browse_metadata.json"
+        ]
+      }
+    }
+  },
+  "local_material_index": "/mnt/data/gaoya/agent-data/outputs_v1/data_platform3_linux/20261013_material_metadata/materials.sqlite",
+  "video_annotation": {
+    "python": "/mnt/data/gaoya/agent-data/envs/video-tracking/bin/python",
+    "repository": "/mnt/data/gaoya/agent-data/apps/video-tracking/sam2",
+    "checkpoint": "/mnt/data/gaoya/agent-data/weights/video-tracking/sam2.1_hiera_tiny.pt",
+    "gpu_uuid": "GPU-439e8b22-75c0-55fc-283f-01f012c049ac",
+    "min_free_gib": 6,
+    "point_repository": "/mnt/data/gaoya/agent-data/apps/video-tracking/co-tracker",
+    "point_checkpoint": "/mnt/data/gaoya/agent-data/weights/video-tracking/scaled_online.pth"
+  }
+}

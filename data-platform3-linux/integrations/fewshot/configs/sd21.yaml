@@ -1,0 +1,17 @@
+name: my_sd21
+model: beyondobjects_sd21
+paths:
+  base_model: ${SD21_MODEL}
+  output_root: ${FEWSHOT_OUTPUT}
+data:
+  root: ${FEWSHOT_DATA}
+train:
+  rank: 4
+  steps: 400
+  batch_size: 4
+  gradient_accumulation: 1
+  learning_rate: 0.0001
+  checkpoint_every: 100
+tracking:
+  enabled: false
+  project: fewshot-generation

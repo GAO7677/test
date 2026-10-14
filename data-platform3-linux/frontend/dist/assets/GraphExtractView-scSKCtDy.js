@@ -1,0 +1,1 @@
+import{M as e}from"./ModulePlaceholder-D7uscQZE.js";import{o as t,j as o}from"./index-CcGJ_aKc.js";const s={__name:"GraphExtractView",setup(r){return(c,a)=>(t(),o(e,{title:"知识图谱抽取",icon:"🔗",description:"基于规则与模型从多模态数据中抽取实体、关系与事件，形成可追溯的知识图谱。","empty-description":"知识图谱抽取能力规划中，后续将在此配置抽取模型与任务。"}))}};export{s as default};

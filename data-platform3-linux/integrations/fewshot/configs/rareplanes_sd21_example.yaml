@@ -1,0 +1,14 @@
+name: rareplanes_sd21_example
+model: beyondobjects_sd21
+paths:
+  base_model: ${SD21_MODEL}
+  output_root: ${FEWSHOT_OUTPUT}
+data:
+  root: ${FEWSHOT_DATA}
+train:
+  rank: 4
+  steps: 400
+  batch_size: 4
+tracking:
+  enabled: false
+  project: fewshot-generation

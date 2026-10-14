@@ -1,0 +1,37 @@
+__pycache__/
+*.pyc
+config.json
+DataPlatform/
+build/
+dist/DataPlatform/
+DataPlatform.spec
+
+# Runtime data and machine-local environments
+.venv/
+backend/.venv/
+frontend/node_modules/
+.env
+.env.*
+Uploads/
+uploads/
+runtime/
+logs/
+Logs/
+db_backup/
+*.sqlite
+*.sqlite-*
+*.log
+# Model assets stay in the offline delivery ZIP or external model storage.
+/models/
+/backend/models/
+*.onnx
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.zip
+# Annotation outputs must not be committed.
+*_label.json
+*_box.json
+*_mask.json
+*_trajectory.json

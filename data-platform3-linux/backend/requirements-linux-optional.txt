@@ -1,0 +1,6 @@
+# 可选增强功能，未纳入基础环境验收。先安装 requirements-linux.txt。
+librosa>=0.10,<0.12
+spacy>=3.7,<3.9
+faster-whisper>=1.1,<2
+# GLiNER 随包仅有量化 ONNX；现有加载器使用普通 from_pretrained，需另行适配。
+# SAM2/SAM3 推理尚未实现，本次不安装 torch 或 CUDA。

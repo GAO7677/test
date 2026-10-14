@@ -1,0 +1,17 @@
+# Python 3.10; separate venv. Do not install on top of the SD2.1 environment.
+diffusers @ git+https://github.com/huggingface/diffusers.git@71774d9bc84600eb4c60522dbf85c4b8cc317e20
+transformers==5.3.0
+peft==0.18.0
+accelerate==1.12.0
+huggingface-hub==1.33.0
+datasets==4.5.0
+Pillow==11.3.0
+PyYAML==6.0.3
+wandb==0.22.2
+numpy==2.2.6
+tokenizers==0.22.2
+safetensors==0.8.0
+sentencepiece==0.2.1
+ftfy==6.3.1
+scipy==1.15.3
+einops==0.8.1

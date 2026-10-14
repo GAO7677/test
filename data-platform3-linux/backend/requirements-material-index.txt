@@ -1,0 +1,2 @@
+# Only needed when rebuilding the local browse index, not by the HTTP service.
+ijson>=3.3,<4

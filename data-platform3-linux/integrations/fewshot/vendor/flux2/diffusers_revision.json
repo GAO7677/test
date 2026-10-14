@@ -1,0 +1,125 @@
+{
+  "sha": "71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+  "node_id": "C_kwDOHa8MBdoAKDcxNzc0ZDliYzg0NjAwZWI0YzYwNTIyZGJmODVjNGI4Y2MzMTdlMjA",
+  "commit": {
+    "author": {
+      "name": "Pauline Bailly-Masson",
+      "email": "155966238+paulinebm@users.noreply.github.com",
+      "date": "2026-10-06T14:21:32Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-06T14:21:32Z"
+    },
+    "message": "Bump doc-builder workflow pin (#14957)\n\n* Bump doc-builder pin to 9fc8a41 in build_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n* Bump doc-builder pin to 9fc8a41 in build_pr_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n* Bump doc-builder pin to 9fc8a41 in upload_pr_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>\nCo-authored-by: Sayak Paul <spsayakpaul@gmail.com>",
+    "tree": {
+      "sha": "715ac2873161883314f707b5edb31a43dd893618",
+      "url": "https://api.github.com/repos/huggingface/diffusers/git/trees/715ac2873161883314f707b5edb31a43dd893618"
+    },
+    "url": "https://api.github.com/repos/huggingface/diffusers/git/commits/71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqxQPsCRC1aQ7uu5UhlAAA0i0QACQ6HLZBT61JOGHlzhPeiNcb\niWqb7ayxxwhNccunphtKHTyeO+kB7I9SyM80/V/y2vNzy6ciT8mpJeUcXQDBhgy+\nXbTfJbkyxw91eH97vSgAivhUQB2nwJtgCwaDc97/SVeo0E/Uw1chjTEr/Nj5GF5r\nVuEUEn0y+jLqhM6ZkjqSNuvcuJoKZYHcQxJkorg09MSRGUDWHBCB0Z3VMTvZFqSo\n9IhYPFFg6fNfwt/MaK9QYFP1TphqOdk3+nsKkreSaUtiZKPeDU4w6wv6ipNyQxeQ\nbSpDDBNz3U0g1va4c5jgHuIGh7MclgtvhqPxfRruIAHsYWKVjM6iJvVRUt9AHP8c\nxNTIr/XK4BTnhfX9qjxxqDmMshPYmzP7Nz6gWKq3TUQn3qR7AtCW9dO7da/oMHkx\nCLKgRmh6g3fFbZNtTx4ptC/KDYGho+/jJb2hApR0RHK5oHIG+I4ULv6+u0dNulBN\nuSN3CPuiVR+QqaKnUKbuLV03WkFZcAKyu/HDBkyVN97D3tMICWdrWe343cFxUe7s\nxj8CglgAHw+p90/+bTLfZOqS+MfOCZaVwlrVFFabhXcYGUPkzpUb5QUGTvtT2yCV\n1bsK3ijhVmvI5bC+uPR8M38n4gvcn/AeBRPRewhSccbcfq/b435WYFTCNkzY9rg1\ndMuKrOtJfC6zu9bIZRmM\n=dddo\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 715ac2873161883314f707b5edb31a43dd893618\nparent bc5e3bd9c55412cb74b6ac5e4c690fc7030461aa\nauthor Pauline Bailly-Masson <155966238+paulinebm@users.noreply.github.com> 1791296492 +0200\ncommitter GitHub <noreply@github.com> 1791296492 +0530\n\nBump doc-builder workflow pin (#14957)\n\n* Bump doc-builder pin to 9fc8a41 in build_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n* Bump doc-builder pin to 9fc8a41 in build_pr_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n* Bump doc-builder pin to 9fc8a41 in upload_pr_documentation.yml\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>\nCo-authored-by: Sayak Paul <spsayakpaul@gmail.com>",
+      "verified_at": "2026-10-06T14:21:34Z"
+    }
+  },
+  "url": "https://api.github.com/repos/huggingface/diffusers/commits/71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+  "html_url": "https://github.com/huggingface/diffusers/commit/71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+  "comments_url": "https://api.github.com/repos/huggingface/diffusers/commits/71774d9bc84600eb4c60522dbf85c4b8cc317e20/comments",
+  "author": {
+    "login": "paulinebm",
+    "id": 155966238,
+    "node_id": "U_kgDOCUvbHg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/155966238?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paulinebm",
+    "html_url": "https://github.com/paulinebm",
+    "followers_url": "https://api.github.com/users/paulinebm/followers",
+    "following_url": "https://api.github.com/users/paulinebm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paulinebm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paulinebm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paulinebm/subscriptions",
+    "organizations_url": "https://api.github.com/users/paulinebm/orgs",
+    "repos_url": "https://api.github.com/users/paulinebm/repos",
+    "events_url": "https://api.github.com/users/paulinebm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paulinebm/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bc5e3bd9c55412cb74b6ac5e4c690fc7030461aa",
+      "url": "https://api.github.com/repos/huggingface/diffusers/commits/bc5e3bd9c55412cb74b6ac5e4c690fc7030461aa",
+      "html_url": "https://github.com/huggingface/diffusers/commit/bc5e3bd9c55412cb74b6ac5e4c690fc7030461aa"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "0b2c2b85f5a484cf444a5068b53fe67c2c6e5f53",
+      "filename": ".github/workflows/build_documentation.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/huggingface/diffusers/blob/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fbuild_documentation.yml",
+      "raw_url": "https://github.com/huggingface/diffusers/raw/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fbuild_documentation.yml",
+      "contents_url": "https://api.github.com/repos/huggingface/diffusers/contents/.github%2Fworkflows%2Fbuild_documentation.yml?ref=71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+      "patch": "@@ -17,7 +17,7 @@ permissions:\n \n jobs:\n   build:\n-    uses: huggingface/doc-builder/.github/workflows/build_main_documentation.yml@e60a538eea9817ab312196d0d233604b01697265  # main\n+    uses: huggingface/doc-builder/.github/workflows/build_main_documentation.yml@9fc8a41d7729c424fdb2192f2f85ff63102ec9a3  # main\n     with:\n       commit_sha: ${{ github.sha }}\n       install_libgl1: true"
+    },
+    {
+      "sha": "0a3d298f68e68de3890035f8efc2822e37956782",
+      "filename": ".github/workflows/build_pr_documentation.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/huggingface/diffusers/blob/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fbuild_pr_documentation.yml",
+      "raw_url": "https://github.com/huggingface/diffusers/raw/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fbuild_pr_documentation.yml",
+      "contents_url": "https://api.github.com/repos/huggingface/diffusers/contents/.github%2Fworkflows%2Fbuild_pr_documentation.yml?ref=71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+      "patch": "@@ -44,7 +44,7 @@ jobs:\n \n   build:\n     needs: check-links\n-    uses: huggingface/doc-builder/.github/workflows/build_pr_documentation.yml@e60a538eea9817ab312196d0d233604b01697265  # main\n+    uses: huggingface/doc-builder/.github/workflows/build_pr_documentation.yml@9fc8a41d7729c424fdb2192f2f85ff63102ec9a3  # main\n     with:\n       commit_sha: ${{ github.event.pull_request.head.sha }}\n       pr_number: ${{ github.event.number }}"
+    },
+    {
+      "sha": "8dcddd44fae57440f6e810e2e22cf1865b767930",
+      "filename": ".github/workflows/upload_pr_documentation.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/huggingface/diffusers/blob/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fupload_pr_documentation.yml",
+      "raw_url": "https://github.com/huggingface/diffusers/raw/71774d9bc84600eb4c60522dbf85c4b8cc317e20/.github%2Fworkflows%2Fupload_pr_documentation.yml",
+      "contents_url": "https://api.github.com/repos/huggingface/diffusers/contents/.github%2Fworkflows%2Fupload_pr_documentation.yml?ref=71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+      "patch": "@@ -11,7 +11,7 @@ permissions:\n \n jobs:\n   build:\n-    uses: huggingface/doc-builder/.github/workflows/upload_pr_documentation.yml@9ad2de8582b56c017cb530c1165116d40433f1c6  # main\n+    uses: huggingface/doc-builder/.github/workflows/upload_pr_documentation.yml@9fc8a41d7729c424fdb2192f2f85ff63102ec9a3  # main\n     with:\n       package_name: diffusers\n     secrets:"
+    }
+  ]
+}

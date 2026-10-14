@@ -1,0 +1,75 @@
+﻿# 数据中台后端依赖（Windows x64 离线环境，支持 Python 3.8.8 / 3.10 / 3.14）
+# 版本选取原则：
+#   - 按 python_version 环境标记分组锁定，pip 会自动选用当前解释器对应的一组；
+#   - 3.8 组取各库最后一个支持 3.8 的稳定版；3.10/3.14 组取当前稳定版；
+#   - opencv 为 cp37-abi3 轮子，三个版本通用；
+#   - numpy 2.5 起不再提供 cp310 轮子，故 3.10 单独锁 2.2.6；
+#   - numba（librosa 传递依赖）尚不支持 numpy 2.5，故 3.11+ 组锁 2.4.6；
+#   - onnxruntime 为检测推理后端（v2.2 起优先于 cv2.dnn）；
+#   - 全部依赖已验证存在对应平台的 Windows x64 离线 wheel（共 53 / 16 / 16 个）。
+# PyInstaller 6.x 在 3.8 上可用，3.10/3.14 用最新版即可。
+
+# ---------- Python 3.8.8 ----------
+fastapi==0.103.2; python_version < '3.9'
+uvicorn==0.24.0.post1; python_version < '3.9'
+sqlalchemy==2.0.23; python_version < '3.9'
+pymysql==1.1.0; python_version < '3.9'
+alembic==1.12.1; python_version < '3.9'
+python-jose[cryptography]==3.3.0; python_version < '3.9'
+cryptography==41.0.7; python_version < '3.9'
+bcrypt==4.1.2; python_version < '3.9'
+python-multipart==0.0.6; python_version < '3.9'
+pydantic==2.5.3; python_version < '3.9'
+pillow==10.2.0; python_version < '3.9'
+numpy==1.24.4; python_version < '3.9'
+onnxruntime==1.19.2; python_version < '3.9'  # 检测推理后端（cv2.dnn 新解析器兼容性差，v2.2 起 ort 优先）
+opencv-python-headless==4.8.1.78; python_version < '3.9'
+soundfile==0.12.1; python_version < '3.9'
+imageio-ffmpeg==0.4.9; python_version < '3.9'
+# librosa 为可选增强（MFCC 特征提取）；未安装时自动回退 numpy 自实现
+librosa==0.10.1; python_version < '3.9'
+# spacy 中文 NER（v3.0 新增）：离线环境需手动下载 zh_core_web_sm-3.7.0 模型放到 backend/models/
+spacy==3.7.5; python_version < '3.9'
+
+# ---------- Python 3.10 ----------
+fastapi==0.141.1; python_version == '3.10.*'
+uvicorn[standard]==0.52.0; python_version == '3.10.*'
+sqlalchemy==2.0.51; python_version == '3.10.*'
+pymysql==1.2.0; python_version == '3.10.*'
+alembic==1.18.5; python_version == '3.10.*'
+python-jose[cryptography]==3.5.0; python_version == '3.10.*'
+cryptography==49.0.0; python_version == '3.10.*'
+bcrypt==5.0.0; python_version == '3.10.*'
+python-multipart==0.0.32; python_version == '3.10.*'
+pydantic==2.13.4; python_version == '3.10.*'
+pillow==12.3.0; python_version == '3.10.*'
+numpy==2.2.6; python_version == '3.10.*'
+onnxruntime==1.23.2; python_version == '3.10.*'
+opencv-python-headless==5.0.0.93; python_version == '3.10.*'
+soundfile==0.14.0; python_version == '3.10.*'
+imageio-ffmpeg==0.6.0; python_version == '3.10.*'
+librosa==0.11.0; python_version == '3.10.*'
+# spacy 中文 NER（v3.0 新增）：离线环境需手动下载 zh_core_web_sm-3.7.0 模型放到 backend/models/
+spacy==3.8.5; python_version == '3.10.*'
+
+# ---------- Python 3.11+（含 3.14） ----------
+fastapi==0.141.1; python_version >= '3.11'
+uvicorn[standard]==0.52.0; python_version >= '3.11'
+sqlalchemy==2.0.51; python_version >= '3.11'
+pymysql==1.2.0; python_version >= '3.11'
+alembic==1.18.5; python_version >= '3.11'
+python-jose[cryptography]==3.5.0; python_version >= '3.11'
+cryptography==49.0.0; python_version >= '3.11'
+bcrypt==5.0.0; python_version >= '3.11'
+python-multipart==0.0.32; python_version >= '3.11'
+pydantic==2.13.4; python_version >= '3.11'
+pillow==12.3.0; python_version >= '3.11'
+numpy==2.4.6; python_version >= '3.11'  # numba（librosa 依赖）尚不支持 numpy 2.5
+onnxruntime==1.28.0; python_version >= '3.11'
+opencv-python-headless==5.0.0.93; python_version >= '3.11'
+soundfile==0.14.0; python_version >= '3.11'
+imageio-ffmpeg==0.6.0; python_version >= '3.11'
+librosa==0.11.0; python_version >= '3.11'
+# spacy 中文 NER（v3.0 新增）：离线环境需手动下载 zh_core_web_sm-3.7.0 模型放到 backend/models/
+# Linux/3.14 适配：3.8.5 无 py3.14 wheel，改用 3.8.16（2026-10-09 部署时验证可用）
+spacy==3.8.16; python_version >= '3.11'

@@ -1,0 +1,42 @@
+[
+  {
+    "rfilename": "text_encoder/model-00001-of-00002.safetensors",
+    "blobId": "7d53e0b41e362367b871a196418998993ca5f5c7",
+    "size": 4967215360,
+    "lfs": {
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+      "size": 4967215360,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "text_encoder/model-00002-of-00002.safetensors",
+    "blobId": "2ad5d9638d4cfb714242e21c74e7c152103bdd05",
+    "size": 3077766632,
+    "lfs": {
+      "sha256": "82f2bd839378541b0557bfabaf37c7d3d637071fdcb73302dedd7cf61162ce07",
+      "size": 3077766632,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "transformer/diffusion_pytorch_model.safetensors",
+    "blobId": "2a29b6aff396f0f6ec23bf0499fab363c58e308f",
+    "size": 7751109744,
+    "lfs": {
+      "sha256": "e109674697ffa1a3983126e32512f5428a9442bd8df59f9c95566ee90a473bb6",
+      "size": 7751109744,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "vae/diffusion_pytorch_model.safetensors",
+    "blobId": "0654e1768dc02cdd4859d2a3548a80102252cc5d",
+    "size": 168120878,
+    "lfs": {
+      "sha256": "ca70d2202afe6415bdbcb8793ba8cd99fd159cfe6192381504d6c4d3036e0f04",
+      "size": 168120878,
+      "pointerSize": 134
+    }
+  }
+]

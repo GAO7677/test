@@ -1,0 +1,18 @@
+name: my_flux2
+model: flux2_klein_base_4b
+paths:
+  base_model: ${FLUX2_MODEL}
+  output_root: ${FEWSHOT_OUTPUT}
+data:
+  root: ${FEWSHOT_DATA}
+train:
+  rank: 4
+  alpha: 4
+  steps: 400
+  batch_size: 1
+  gradient_accumulation: 4
+  learning_rate: 0.0001
+  checkpoint_every: 100
+tracking:
+  enabled: false
+  project: fewshot-generation

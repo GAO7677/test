@@ -1,0 +1,92 @@
+/* 暗色主题：与 v1.3 原型配色一致
+   背景 #0c1220 / 主色 #60a5fa / 辅助 #1e3a8a / 成功 #34d399 / 警告 #fbbf24 / 危险 #ef4444 */
+:root {
+  --dp-bg: #0c1220;
+  --dp-bg-card: #131c31;
+  --dp-bg-hover: #1a2540;
+  --dp-border: #24304d;
+  --dp-primary: #60a5fa;
+  --dp-primary-deep: #1e3a8a;
+  --dp-success: #34d399;
+  --dp-warning: #fbbf24;
+  --dp-danger: #ef4444;
+  --dp-text: #e2e8f0;
+  --dp-text-secondary: #94a3b8;
+
+  --el-color-primary: #60a5fa;
+  --el-color-success: #34d399;
+  --el-color-warning: #fbbf24;
+  --el-color-danger: #ef4444;
+  --el-bg-color: #131c31;
+  --el-bg-color-overlay: #1a2540;
+  --el-fill-color-blank: #131c31;
+  --el-border-color: #24304d;
+  --el-border-color-light: #24304d;
+  --el-border-color-lighter: #1e2a45;
+  --el-text-color-primary: #e2e8f0;
+  --el-text-color-regular: #cbd5e1;
+  --el-text-color-secondary: #94a3b8;
+  --el-mask-color: rgba(12, 18, 32, 0.75);
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--dp-bg);
+  color: var(--dp-text);
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  min-width: 1280px; /* 响应式：适配桌面端，最小宽度1280px */
+}
+
+* { box-sizing: border-box; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #2a3a5f; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* 通用页面结构 */
+.page { padding: 20px 24px; }
+.page-header { margin-bottom: 18px; }
+.page-header h2 { margin: 0 0 6px; font-size: 1.3rem; display: flex; align-items: center; gap: 8px; }
+.page-header p { margin: 0; color: var(--dp-text-secondary); font-size: 0.85rem; }
+
+.stat-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.stat-card {
+  background: linear-gradient(135deg, var(--dp-bg-card), #16223c);
+  border: 1px solid var(--dp-border);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.stat-label { color: var(--dp-text-secondary); font-size: 0.8rem; margin-bottom: 6px; }
+.stat-value { font-size: 1.6rem; font-weight: 700; color: var(--dp-primary); font-variant-numeric: tabular-nums; }
+.stat-value.success { color: var(--dp-success); }
+.stat-value.warning { color: var(--dp-warning); }
+
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  background: var(--dp-bg-card); border: 1px solid var(--dp-border);
+  border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;
+}
+
+.table-card {
+  background: var(--dp-bg-card); border: 1px solid var(--dp-border);
+  border-radius: 10px; padding: 14px;
+}
+
+.pager { display: flex; justify-content: flex-end; margin-top: 12px; }
+
+.empty-tip { text-align: center; color: #64748b; padding: 40px 0; }
+
+/* Element Plus 细节覆盖 */
+.el-table { --el-table-header-bg-color: #16223c; --el-table-tr-bg-color: var(--dp-bg-card); --el-table-row-hover-bg-color: var(--dp-bg-hover); }
+.el-table th.el-table__cell { color: var(--dp-text-secondary); }
+.el-card { background: var(--dp-bg-card); border-color: var(--dp-border); }
+.el-dialog { background: var(--dp-bg-card); border: 1px solid var(--dp-border); }
+.el-drawer { background: var(--dp-bg-card); }
+
+/* 面包屑 */
+.breadcrumb { margin-bottom: 12px; color: var(--dp-text-secondary); font-size: 0.85rem; }
+.breadcrumb .sep { margin: 0 6px; color: #475569; }
+.breadcrumb .cur { color: var(--dp-primary); }

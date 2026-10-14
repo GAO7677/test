@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "vendor/beyondobjects/finetune_t2i.py",
+      "sha256": "f57cb27e872867b911042e54faedd741d5ec89b51613c465453345a93523c426"
+    },
+    {
+      "path": "vendor/beyondobjects/config.py",
+      "sha256": "e82f1633efac946dbaae4c65ac4061c9fef5cb421a2cd70dab29f46c7d4f01e3"
+    },
+    {
+      "path": "vendor/beyondobjects/util.py",
+      "sha256": "66fc3ac55cbbafd3cf088e6a030c30bbf084187d046ee8100dc1717cf4f9db37"
+    },
+    {
+      "path": "vendor/flux2/official_train.py",
+      "sha256": "83bccc8c041496aa33939b6ff1f95d0929c1c71a9a29cdc64ecacd4a503fccfe"
+    },
+    {
+      "path": "vendor/flux2/model_files.json",
+      "sha256": "f94920dfc980ebb2fad05b1f9c2b3b61101a8c43c44a57b61c7180ad18020312"
+    },
+    {
+      "path": "vendor/flux2/model_revision.json",
+      "sha256": "3fdad928fcf6a4da3ed5bd987e9d79a1cb52cb5c58d72a3cb841c036edf3d455"
+    },
+    {
+      "path": "vendor/flux2/diffusers_revision.json",
+      "sha256": "a9a3acdc1a32bd040d67bcc36c3119f9156bc664e9ed9303411a8fbe46b40e18"
+    },
+    {
+      "path": "vendor/chimera/main_chimera.py",
+      "sha256": "a2649cf05d8d82d1259e77bb34abc119eb565199e4aca2f66ee608be62d226ff"
+    },
+    {
+      "path": "vendor/chimera/util.py",
+      "sha256": "c089be65f9d5f5cb5984b6b86c97844c03be6dded10eff1f9de19fea450d5035"
+    }
+  ],
+  "beyondobjects_commit": "8bc17e0537991f6bb5c0399339bddb3d1418d220",
+  "chimera_commit": "c42069d4ede36d17da17ebe102da552e1624e8f5",
+  "diffusers_commit": "71774d9bc84600eb4c60522dbf85c4b8cc317e20",
+  "note": "Training source snapshots, including Chimera shared-A changes; file hashes are authoritative."
+}

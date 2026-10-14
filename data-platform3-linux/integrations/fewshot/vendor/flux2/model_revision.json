@@ -1,0 +1,201 @@
+{
+  "_id": "69679d44a2073a08e0fdace1",
+  "id": "black-forest-labs/FLUX.2-klein-base-4B",
+  "private": false,
+  "pipeline_tag": "image-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "downloads": 301426,
+  "likes": 177,
+  "modelId": "black-forest-labs/FLUX.2-klein-base-4B",
+  "author": "black-forest-labs",
+  "sha": "a3b4f4849157f664bdbc776fd7453c2783562f4d",
+  "lastModified": "2026-02-24T00:20:58.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "diffusers": {
+      "_class_name": "Flux2KleinPipeline"
+    }
+  },
+  "cardData": {
+    "license": "apache-2.0",
+    "language": [
+      "en"
+    ],
+    "pipeline_tag": "image-to-image",
+    "tags": [
+      "text-to-image",
+      "image-editing",
+      "flux",
+      "diffusion-single-file"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "LICENSE.md"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "editing.jpg"
+    },
+    {
+      "rfilename": "flux-2-klein-base-4b.safetensors"
+    },
+    {
+      "rfilename": "model_index.json"
+    },
+    {
+      "rfilename": "others.jpg"
+    },
+    {
+      "rfilename": "realism.jpg"
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json"
+    },
+    {
+      "rfilename": "text_encoder/config.json"
+    },
+    {
+      "rfilename": "text_encoder/generation_config.json"
+    },
+    {
+      "rfilename": "text_encoder/model-00001-of-00002.safetensors"
+    },
+    {
+      "rfilename": "text_encoder/model-00002-of-00002.safetensors"
+    },
+    {
+      "rfilename": "text_encoder/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "tokenizer/added_tokens.json"
+    },
+    {
+      "rfilename": "tokenizer/chat_template.jinja"
+    },
+    {
+      "rfilename": "tokenizer/merges.txt"
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer/tokenizer.json"
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json"
+    },
+    {
+      "rfilename": "tokenizer/vocab.json"
+    },
+    {
+      "rfilename": "transformer/config.json"
+    },
+    {
+      "rfilename": "transformer/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "rfilename": "vae/config.json"
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.safetensors"
+    }
+  ],
+  "spaces": [
+    "tardellirs/model-pulse",
+    "embedl/hfviewer",
+    "aquanode/gpu-vram-calculator",
+    "stephenbtl/klein-build-small-starter",
+    "black-forest-labs/FLUX.2-klein-4B",
+    "Upsampler/flux-2-klein-4b",
+    "cronos3k/CharacterForgePro",
+    "aiqtech/FLUX.2-klein-4B",
+    "nomadoor/flux2-klein-4b-erp-outpaint-lora-demo",
+    "build-small-hackathon/closet-twin",
+    "linoyts/flux2-klein-360-erp-outpaint-4b",
+    "build-small-hackathon/lightloom",
+    "FoxLoverAI/TurboCustomImageEditing",
+    "build-small-hackathon/visual-lineage",
+    "build-small-hackathon/NEXUS_Visual_Weaver",
+    "basyx/MediaRouter",
+    "lablab-ai-amd-developer-hackathon/nemoflix-amd-video",
+    "build-small-hackathon/Typotopia",
+    "build-small-hackathon/Memory-Quilt",
+    "bchao1/foveated-diffusion",
+    "tianzijian/flux",
+    "Abmalik/FLUX.2-klein-4B",
+    "Niketjain2002/FLUX.2-klein-4B-Niketjain",
+    "esperz/FLUX.2-klein-4B",
+    "Kalibro/FLUX.2-klein-4B",
+    "Niketjain2002/FLUX.2-klein-4B",
+    "jhh6576/FLUX.2-klein-4B",
+    "leey00nsu/FLUX.2-klein-4B",
+    "hoangkha1810/FLUX.2-klein-4B",
+    "vdmpeniel/FLUX.2-klein-4B",
+    "elmorshedyahmed/black-forest-labs-FLUX.2-klein-base-4B",
+    "starterpacker/FLUX.2-klein-4B",
+    "fcallejon/black-forest-labs-FLUX.2-klein-base-4B",
+    "jkvalani001/black-forest-labs-FLUX.2-klein-base-4B",
+    "zhiping0929/black-forest-labs-FLUX.2-klein-base-4B",
+    "oskarnolasko43/black-forest-labs-FLUX.2-klein-base-4B",
+    "oskarnolasko43/FLUX.2-klein-4B",
+    "matil10022/black-forest-labs-FLUX.2-klein-base-4B",
+    "HackerCode07/FLUX.2-klein-4B",
+    "ReidSurmeier/fnp042-v3-demo",
+    "Rajitsinghai/black-forest-labs-FLUX.2-klein-base-4B",
+    "Artiy263/FLUX.2-klein-4B-Arty263",
+    "ChevalierJoseph/typotopia2",
+    "ReidSurmeier/disimages-v1-flux2-klein-demo",
+    "Snasquanch85/FLUX.2-Klein-Pixel-Spritesheet",
+    "reversely/watercolour-training-lora",
+    "reversely/marie-claire-lefebure_klein-4b-lora",
+    "Polymorph123/qwenuc",
+    "specimba/NEXUS_Visual_Weaver",
+    "rainey/shopfront",
+    "rainey/klein-lora-studio",
+    "anr2me/klein-build-small-starter",
+    "qryloadmin/image-models-demo",
+    "phan-kim-tu/FLUX.2-klein-4B",
+    "Ava2lon/FLUX",
+    "vuongthai91/flux-2-klein-4b",
+    "LiXiY/Easy-Insert",
+    "Jplayz/peerpixel-runner",
+    "ptakugreyrat/dlss-5-anything-w-prompt2.0",
+    "hugging-apps/rum-flux2-klein-4b-demo",
+    "CyberWaifu/test",
+    "Maliktg5/image_generation_model",
+    "ML-Intern-lab/huggy-generator",
+    "theGratefulQuad/FLUX.2-klein-4B",
+    "amani-b/klein-garment-test"
+  ],
+  "createdAt": "2026-01-14T13:42:28.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 3875544576
+    },
+    "total": 3875544576
+  },
+  "inference": "warm",
+  "usedStorage": 23744343112
+}
